@@ -19,7 +19,7 @@ home.file.".steam/steam/steam_dev.cfg".text = ''
 @fDownloadRateImprovementToAddAnotherConnection 1.0
 '';
 
-home.stateVersion = "23.11";
+home.stateVersion = "24.05";
 programs.home-manager.enable = true;
 
 }

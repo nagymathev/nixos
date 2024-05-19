@@ -133,6 +133,7 @@ environment.systemPackages = with pkgs; [
 
 	steam
 	heroic
+	bottles
 	prismlauncher
 	megasync
 	obsidian
