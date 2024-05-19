@@ -124,6 +124,11 @@ environment.systemPackages = with pkgs; [
 	fzf
 	btop
 
+	zip
+	xz
+	unzip
+	p7zip
+
 	pciutils
 	usbutils
 	lm_sensors
@@ -132,6 +137,7 @@ environment.systemPackages = with pkgs; [
 	tmux
 
 	steam
+	protonup-qt
 	heroic
 	bottles
 	prismlauncher
