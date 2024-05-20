@@ -29,11 +29,6 @@ programs.git = {
 	userEmail = "nagymathev@gmail.com";
 };
 
-home.file.".steam/steam/steam_dev.cfg".text = ''
-@nClientDownloadEnableHTTP2PlatformLinux 0
-@fDownloadRateImprovementToAddAnotherConnection 1.0
-'';
-
 home.stateVersion = "24.05";
 programs.home-manager.enable = true;
 
