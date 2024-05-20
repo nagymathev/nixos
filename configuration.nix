@@ -128,6 +128,10 @@ environment.systemPackages = with pkgs; [
 	fzf
 	btop
 
+	libgcc
+	gnumake
+	nodejs_22
+
 	zip
 	xz
 	unzip

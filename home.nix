@@ -2,6 +2,10 @@
 
 {
 
+imports = [
+	./home/kitty.nix
+];
+
 home.username = "viktor";
 home.homeDirectory = "/home/viktor";
 
