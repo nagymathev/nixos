@@ -160,6 +160,8 @@ fonts.packages = with pkgs; [
 	fira-code-nerdfont
 ];
 
+powerManagement.powerUpCommands = "sudo rmmod atkbd; sudo modprobe atkbd reset=1";
+
 # Some programs need SUID wrappers, can be configured further or are
 # started in user sessions.
 # programs.mtr.enable = true;
