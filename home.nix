@@ -11,6 +11,16 @@ home.username = "viktor";
 home.homeDirectory = "/home/viktor";
 
 home.packages = with pkgs; [
+	steam
+	protonup-qt
+	heroic
+	bottles
+	prismlauncher
+	megasync
+	obsidian
+	anki
+
+	kitty
 ];
 
 programs.git = {

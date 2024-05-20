@@ -141,17 +141,7 @@ environment.systemPackages = with pkgs; [
 	usbutils
 	lm_sensors
 	
-	kitty
 	tmux
-
-	steam
-	protonup-qt
-	heroic
-	bottles
-	prismlauncher
-	megasync
-	obsidian
-	anki
 ];
 environment.variables.EDITOR = "nvim";
 programs.zsh.enable = true;
