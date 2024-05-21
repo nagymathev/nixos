@@ -10,6 +10,7 @@ imports =
 [ # Include the results of the hardware scan.
 	./hardware-configuration.nix
 	./nvidia.nix
+	./specialisations.nix
 ];
 
 boot.kernelPackages = pkgs.linuxPackages_zen;
