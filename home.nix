@@ -34,6 +34,22 @@ xdg.desktopEntries.ciscoPacketTracer8 = {
 	exec = "XDG_CURRENT_DESKTOP=GNOME packettracer8 %f";
 };
 
+xdg.configFile."autostart/megasync.desktop".text = ''
+[Desktop Entry]
+Categories=Network;System;
+Comment=Easy automated syncing between your computers and your MEGA cloud drive.
+Exec=megasync
+GenericName=File Synchronizer
+Icon=mega
+Name=MEGAsync
+StartupNotify=false
+Terminal=false
+TryExec=megasync
+Type=Application
+Version=1.0
+X-GNOME-Autostart-Delay=60
+'';
+
 home.stateVersion = "24.05";
 programs.home-manager.enable = true;
 
