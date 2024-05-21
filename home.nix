@@ -15,6 +15,7 @@ home.packages = with pkgs; [
 	protonup-qt
 	heroic
 	bottles
+	lutris
 	prismlauncher
 	megasync
 	obsidian
