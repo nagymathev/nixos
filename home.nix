@@ -20,6 +20,9 @@ home.packages = with pkgs; [
 	obsidian
 	anki
 
+	mangohud
+	gamemode
+
 	kitty
 ];
 
