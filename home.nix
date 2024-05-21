@@ -29,6 +29,11 @@ programs.git = {
 	userEmail = "nagymathev@gmail.com";
 };
 
+xdg.desktopEntries.ciscoPacketTracer8 = {
+	name = "Cisco Packet Tracer 8";
+	exec = "XDG_CURRENT_DESKTOP=GNOME packettracer8 %f";
+};
+
 home.stateVersion = "24.05";
 programs.home-manager.enable = true;
 
