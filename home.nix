@@ -33,6 +33,26 @@ programs.git = {
 	userEmail = "nagymathev@gmail.com";
 };
 
+programs.zsh = {
+	enable = true;
+	enableCompletion = true;
+	autosuggestion.enable = true;
+
+	oh-my-zsh = {
+		enable = true;
+		plugins = [
+			"git"
+		];
+	};
+
+	initExtra = ''
+bindkey '\e[H' beginning-of-line
+bindkey '\eOH' beginning-of-line
+bindkey '\e[F' end-of-line
+bindkey '\eOF' end-of-line
+	'';
+};
+
 xdg.desktopEntries.ciscoPacketTracer8 = {
 	name = "Cisco Packet Tracer 8";
 	exec = "XDG_CURRENT_DESKTOP=GNOME packettracer8 %f";
