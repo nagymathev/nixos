@@ -155,6 +155,7 @@ fonts.packages = with pkgs; [
 
 # Meant to solve the issue when KDE doesn't acknowledge the keyboard when waking from sleep without closing the lid
 powerManagement.powerUpCommands = "sudo rmmod atkbd; sudo modprobe atkbd reset=1";
+powerManagement.resumeCommands = "${pkgs.kmod}/bin/rmmod atkbd; ${pkgs.kmod}/bin/modprobe atkbd reset=1";
 
 # Some programs need SUID wrappers, can be configured further or are
 # started in user sessions.
