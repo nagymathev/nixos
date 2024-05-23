@@ -153,6 +153,7 @@ fonts.packages = with pkgs; [
 	fira-code-nerdfont
 ];
 
+# Meant to solve the issue when KDE doesn't acknowledge the keyboard when waking from sleep without closing the lid
 powerManagement.powerUpCommands = "sudo rmmod atkbd; sudo modprobe atkbd reset=1";
 
 # Some programs need SUID wrappers, can be configured further or are
