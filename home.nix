@@ -19,7 +19,7 @@ home.packages = with pkgs; [
 	prismlauncher
 	megasync
 	obsidian
-	anki
+	anki-bin
 
 	mangohud
 	gamemode
