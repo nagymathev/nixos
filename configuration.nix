@@ -70,6 +70,8 @@ services.xserver.enable = true;
 services.desktopManager.plasma6.enable = true;
 services.displayManager.sddm.enable = true;
 
+hardware.tuxedo-keyboard.enable = true;
+
 # Configure keymap in X11
 services.xserver = {
 	xkb.layout = "gb";
