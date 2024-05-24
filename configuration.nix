@@ -70,6 +70,7 @@ services.xserver.enable = true;
 services.desktopManager.plasma6.enable = true;
 services.displayManager.sddm.enable = true;
 
+# Do not enable tuxedo-rs, it makes things run poorly.
 hardware.tuxedo-keyboard.enable = true;
 
 # Configure keymap in X11
