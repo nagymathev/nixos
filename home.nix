@@ -43,6 +43,7 @@ programs.zsh = {
 		plugins = [
 			"git"
 		];
+		theme = "philips";
 	};
 
 	initExtra = ''
