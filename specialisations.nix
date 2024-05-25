@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, lib, ... }:
 
 {
 
@@ -22,6 +22,13 @@ specialisation = {
 		'';
 
 		boot.blacklistedKernelModules = [ "nouveau" "nvidia" "nvidia_drm" "nvidia_modeset" ];
+	};
+
+	nvidia-sync.configuration = {
+		system.nixos.tags = [ "Nvidia Sync Force "];
+
+		hardware.nvidia.prime.offload.enable = lib.mkForce false;
+		hardware.nvidia.prime.sync.enable = lib.mkForce true;
 	};
 };
 
