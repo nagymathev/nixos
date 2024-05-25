@@ -25,10 +25,16 @@ specialisation = {
 	};
 
 	nvidia-sync.configuration = {
-		system.nixos.tags = [ "Nvidia Sync Force "];
+		system.nixos.tags = [ "Nvidia-Sync-Force"];
 
-		hardware.nvidia.prime.offload.enable = lib.mkForce false;
-		hardware.nvidia.prime.sync.enable = lib.mkForce true;
+		hardware.nvidia = {
+			prime.offload.enable = lib.mkForce false;
+			prime.offload.enableOffloadCmd = lib.mkForce false;
+			powerManagement.enable = lib.mkForce false;
+			powerManagement.finegrained = lib.mkForce false;
+
+			prime.sync.enable = lib.mkForce true;
+		};
 	};
 };
 
