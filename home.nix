@@ -42,6 +42,7 @@ programs.zsh = {
 		enable = true;
 		plugins = [
 			"git"
+			"direnv"
 		];
 		theme = "philips";
 	};

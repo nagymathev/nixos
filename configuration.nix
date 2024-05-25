@@ -27,6 +27,8 @@ imports =
 # Enable CUPS to print documents.
 services.printing.enable = true;
 
+programs.direnv.enable = true;
+
 environment.variables.EDITOR = "nvim";
 programs.zsh.enable = true;
 users.defaultUserShell = pkgs.zsh;

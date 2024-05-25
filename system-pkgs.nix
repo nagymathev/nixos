@@ -12,10 +12,6 @@ environment.systemPackages = with pkgs; [
 	btop
 	just
 
-	libgcc
-	gnumake
-	nodejs_22
-
 	zip
 	xz
 	unzip
