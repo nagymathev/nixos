@@ -22,7 +22,6 @@ home.packages = with pkgs; [
 	anki-bin
 
 	mangohud
-	gamemode
 
 	kitty
 ];

@@ -28,6 +28,7 @@ imports =
 services.printing.enable = true;
 
 programs.direnv.enable = true;
+programs.gamemode.enable = true;
 
 environment.variables.EDITOR = "nvim";
 programs.zsh.enable = true;
