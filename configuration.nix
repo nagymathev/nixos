@@ -22,6 +22,7 @@ imports =
 	./nix-settings.nix
 	./kernel.nix
 	./desktop.nix
+	./tmux.nix
 ];
 
 # Enable CUPS to print documents.
