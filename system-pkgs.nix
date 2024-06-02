@@ -20,6 +20,8 @@ environment.systemPackages = with pkgs; [
 	pciutils
 	usbutils
 	lm_sensors
+
+	libclang
 ];
 
 }
