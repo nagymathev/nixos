@@ -15,3 +15,5 @@ test:
 	sudo nixos-rebuild test --option eval-cache false
 gc:
 	nix-store --gc
+gens:
+	nixos-rebuild list-generations
