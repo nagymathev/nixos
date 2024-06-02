@@ -5,6 +5,7 @@
 imports = [
 	./home/kitty.nix
 	./home/steam.nix
+	./home/hyprland.nix
 ];
 
 home.username = "viktor";
