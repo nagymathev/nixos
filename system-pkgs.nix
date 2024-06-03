@@ -12,6 +12,8 @@ environment.systemPackages = with pkgs; [
 	btop
 	just
 
+	vscode
+
 	zip
 	xz
 	unzip
