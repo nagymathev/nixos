@@ -38,6 +38,15 @@ programs.zsh = {
 	enableCompletion = true;
 	autosuggestion.enable = true;
 
+	shellAliases = {
+		g = "git";
+		ga = "git add";
+		gd = "git diff";
+		gds = "git diff --staged";
+		gc = "git commit -m";
+		gp = "git push";
+	};
+
 	oh-my-zsh = {
 		enable = true;
 		plugins = [
