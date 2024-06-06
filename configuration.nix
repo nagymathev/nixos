@@ -11,7 +11,6 @@ imports =
 	./hardware-configuration.nix
 	./nvidia.nix
 	./specialisations.nix
-	./tuxedo.nix
 	./localisation.nix
 	./keyboard.nix
 	./audio.nix

@@ -35,6 +35,7 @@ in {
 		};
 		modules = [
 			./configuration.nix
+			./tuxedo.nix
 			nixos-hardware.nixosModules.tuxedo-pulse-14-gen3
 
 			home-manager.nixosModules.home-manager
