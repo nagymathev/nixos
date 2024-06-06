@@ -26,6 +26,11 @@ imports =
 	inputs.nixvim.nixosModules.nixvim
 ];
 
+programs.nix-ld = {
+	enable = true;
+	libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
+};
+
 programs.nixvim = {
 	enable = true;
 	colorschemes.gruvbox.enable = true;
