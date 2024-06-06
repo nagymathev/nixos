@@ -3,6 +3,7 @@ description = "My NixOS Flake";
 
 inputs = {
 	nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+	nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 	home-manager = {
 		url = "github:nix-community/home-manager";
 		inputs.nixpkgs.follows = "nixpkgs";
@@ -13,7 +14,7 @@ inputs = {
 	};
 };
 
-outputs = { self, nixpkgs, home-manager, nixvim, ... }@inputs:
+outputs = { self, nixpkgs, nixos-hardware, home-manager, nixvim, ... }@inputs:
 let
 	system = "x86_64-linux";
 	pkgs = import nixpkgs {
@@ -34,6 +35,7 @@ in {
 		};
 		modules = [
 			./configuration.nix
+			nixos-hardware.nixosModules.tuxedo-pulse-14-gen3
 
 			home-manager.nixosModules.home-manager
 			{
