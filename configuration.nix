@@ -38,8 +38,9 @@ programs.nixvim = {
 
 		scrolloff = 10;
 
-		globals.mapleader = " ";
 	};
+
+	globals.mapleader = " ";
 
 	plugins = {
 		cmp.enable = true;
