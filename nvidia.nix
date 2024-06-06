@@ -22,6 +22,9 @@ hardware.opengl = {
 };
 
 services.xserver.videoDrivers = [ "nvidia" ];
+hardware.opengl.extraPackages = with pkgs; [
+	vaapiVdpau # may solve wayland not working
+];
 
 hardware.nvidia = {
 	modesetting.enable = true;
