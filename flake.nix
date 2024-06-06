@@ -30,6 +30,7 @@ in {
 		specialArgs = {
 			inherit inputs;
 			inherit pkgs;
+			inherit lib;
 		};
 		modules = [
 			./configuration.nix
