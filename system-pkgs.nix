@@ -13,6 +13,7 @@ environment.systemPackages = with pkgs; [
 	just
 
 	vscode
+	libreoffice
 
 	zip
 	xz
