@@ -37,6 +37,8 @@ programs.nixvim = {
 		smartcase = true;
 
 		scrolloff = 10;
+
+		globals.mapleader = " ";
 	};
 
 	plugins = {
