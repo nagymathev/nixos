@@ -8,11 +8,20 @@ nvidia-offload = pkgs.writeShellScriptBin "nvidia-offload"
 	export __VK_LAYER_NV_optimus=NVIDIA_only
 	exec "$@"
 	'';
+	
+fsr-on = pkgs.writeShellScriptBin "fsr-on"
+	''
+	export WINE_FSR_OVERRIDE=1
+	export WINE_FULLSCREEN_FSR=1
+	export WINE_FULLSCREEN_FSR_STRENGTH=1
+	exec "$@"
+	'';
 
 in {
 
 environment.systemPackages = with pkgs; [
 	nvidia-offload
+	fsr-on
 ];
 
 hardware.opengl = {
