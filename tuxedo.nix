@@ -8,4 +8,11 @@ hardware.tuxedo-keyboard.enable = true;
 hardware.tuxedo-rs.enable = true;
 hardware.tuxedo-rs.tailor-gui.enable = true;
 
+# Disable backlight with 0 brightness
+boot.kernelParams = [
+	"tuxedo_keyboard.mode=0"
+	"tuxedo_keyboard.brightness=0"
+	"tuxedo_keyboard.color_left=0xff0a0a"
+];
+
 }
