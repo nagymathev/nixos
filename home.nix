@@ -40,11 +40,15 @@ programs.zsh = {
 
 	shellAliases = {
 		g = "git";
+		gs = "git status";
 		ga = "git add";
 		gd = "git diff";
 		gds = "git diff --staged";
 		gc = "git commit -m";
 		gp = "git push";
+		
+		ll = "ls -l";
+		la = "ls -al";
 	};
 
 	oh-my-zsh = {
