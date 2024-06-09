@@ -29,7 +29,7 @@ programs.nixvim = {
 				# Markdown
 				marksman.enable = true;
 				# Nix
-				nil_ls.enable = true;
+				nil-ls.enable = true;
 				# Bash
 				bashls.enable = true;
 				# C/C++
