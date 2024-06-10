@@ -16,6 +16,9 @@
 			sansSerif = config.stylix.fonts.monospace;
 			emoji = config.stylix.fonts.monospace;
 		};
+		
+		targets.grub.enable = true;
+		targets.grub.useImage = true;
 	};
 
 }
