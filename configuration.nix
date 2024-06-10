@@ -23,6 +23,7 @@ imports =
 	./desktop.nix
 	./tmux.nix
 	./nixvim.nix
+	./stylix.nix
 
 	inputs.nixvim.nixosModules.nixvim
 ];

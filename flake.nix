@@ -12,9 +12,10 @@ inputs = {
 		url = "github:nix-community/nixvim";
 		inputs.nixpkgs.follows = "nixpkgs";
 	};
+	stylix.url = "github:danth/stylix";
 };
 
-outputs = { self, nixpkgs, nixos-hardware, home-manager, nixvim, ... }@inputs:
+outputs = { self, nixpkgs, nixos-hardware, home-manager, nixvim, stylix, ... }@inputs:
 let
 	system = "x86_64-linux";
 	pkgs = import nixpkgs {
@@ -38,6 +39,7 @@ in {
 			./tuxedo.nix
 			nixos-hardware.nixosModules.tuxedo-pulse-14-gen3
 
+			stylix.nixosModules.stylix
 			home-manager.nixosModules.home-manager
 			{
 				home-manager.useGlobalPkgs = true;
