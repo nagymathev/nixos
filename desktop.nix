@@ -3,7 +3,7 @@
 
 # Enable the X11 windowing system.
 services.xserver.enable = true;
-services.xserver.dpi = 188;
+services.xserver.dpi = 144;
 
 services.xserver.windowManager.i3.enable = true;
 
