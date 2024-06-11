@@ -9,6 +9,7 @@ in {
 imports =
 [ # Include the results of the hardware scan.
 	./hardware-configuration.nix
+	./inputs.nix
 	./nvidia.nix
 	./specialisations.nix
 	./localisation.nix
