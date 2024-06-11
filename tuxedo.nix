@@ -12,7 +12,7 @@ hardware.tuxedo-rs.tailor-gui.enable = true;
 boot.kernelParams = [
 	"tuxedo_keyboard.mode=0"
 	"tuxedo_keyboard.brightness=0"
-	"tuxedo_keyboard.color_left=0xff0a0a"
+	"tuxedo_keyboard.color_left=0x000000"
 ];
 
 }
