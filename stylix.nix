@@ -3,7 +3,7 @@
 	
 	stylix = {
 		enable = true;
-		image = ./assets/stargate.png;
+		image = ./assets/statue.png;
 		polarity = "dark";
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 		
