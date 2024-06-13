@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
 	
 stylix = {
@@ -22,8 +22,12 @@ stylix = {
 	targets.grub.useImage = true;
 };
 
+# Change the cursor size to what it would be under 150% scaling with 24px cursors
+# This is because some apps running electron or else can't properly query the global
+# scaling or just don't manage the cursor under the wayland protocol.
+# This feels like a hacky solution and I hate it.
 environment.variables = {
-	XCURSOR_SIZE = 36;
+	XCURSOR_SIZE = lib.mkForce 36;
 };
 
 }
