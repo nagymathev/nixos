@@ -27,7 +27,7 @@ stylix = {
 # scaling or just don't manage the cursor under the wayland protocol.
 # This feels like a hacky solution and I hate it.
 environment.variables = {
-	XCURSOR_SIZE = lib.mkForce 36;
+	XCURSOR_SIZE = lib.mkForce "36";
 };
 
 }
