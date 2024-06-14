@@ -18,7 +18,7 @@ imports =
 	./audio.nix
 	./users.nix
 	./networking.nix
-	./grub.nix
+	./boot.nix
 	./system-pkgs.nix
 	./nix-settings.nix
 	./kernel.nix
