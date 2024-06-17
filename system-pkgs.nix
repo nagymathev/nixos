@@ -27,6 +27,7 @@ environment.systemPackages = with pkgs; [
 	libclang
 	cargo
 	rustc
+	gcc
 ];
 
 }
