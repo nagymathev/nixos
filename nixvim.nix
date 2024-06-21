@@ -24,8 +24,6 @@ programs.nixvim = {
 		nvim-autopairs.enable = true;
 		clangd-extensions.enable = true;
 		
-		# Rust
-		rustaceanvim.enable = true;
 		lsp = {
 			enable = true;
 			servers = {
@@ -44,11 +42,18 @@ programs.nixvim = {
 
 			};
 		};
+		# Rust
+		rustaceanvim = {
+			enable = true;
+		};
 
 		telescope = {
 			enable = true;
 			extensions = {
 				fzf-native.enable = true;
+			};
+			keymaps = {
+				"<leader>ff" = "find_files";
 			};
 		};
 
