@@ -23,6 +23,9 @@ programs.nixvim = {
 		treesitter.enable = true;
 		nvim-autopairs.enable = true;
 		clangd-extensions.enable = true;
+		
+		# Rust
+		rustaceanvim.enable = true;
 		lsp = {
 			enable = true;
 			servers = {
@@ -38,6 +41,7 @@ programs.nixvim = {
 				dockerls.enable = true;
 				# Python
 				pyright.enable = true;
+
 			};
 		};
 
