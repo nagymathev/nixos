@@ -24,15 +24,15 @@ environment.systemPackages = with pkgs; [
 	fsr-on
 ];
 
-hardware.opengl = {
+hardware.graphics = {
 	enable = true;
 	driSupport32Bit = true;
+	extraPackages = with pkgs; [
+		vaapiVdpau
+	];
 };
 
 services.xserver.videoDrivers = [ "nvidia" ];
-hardware.opengl.extraPackages = with pkgs; [
-	vaapiVdpau # may solve wayland not working
-];
 
 hardware.nvidia = {
 	modesetting.enable = true;
