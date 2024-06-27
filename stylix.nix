@@ -3,7 +3,7 @@
 	
 stylix = {
 	enable = true;
-	image = ./assets/statue.png;
+	image = ./assets/space-station.jpg;
 	polarity = "dark";
 	base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
 
