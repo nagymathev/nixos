@@ -12,6 +12,8 @@ home.packages = with pkgs; [
 	obsidian
 	anki-bin
 
+	jetbrains.clion
+
 	mangohud
 
 	kitty
