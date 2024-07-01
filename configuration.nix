@@ -35,6 +35,8 @@ programs.nix-ld = {
 	libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
 };
 
+services.syncthing.enable = true;
+
 # Enable CUPS to print documents.
 services.printing.enable = true;
 
