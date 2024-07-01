@@ -9,7 +9,8 @@ services.syncthing = {
 	# To change this use
 	# guiAddress = "127.0.0.1:6969"
 
-	# user = "viktor";
+	user = "viktor";
+	dataDir = "/home/viktor/syncthing";
 };
 
 }
