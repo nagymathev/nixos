@@ -11,6 +11,7 @@ services.syncthing = {
 
 	user = "viktor";
 	dataDir = "/home/viktor/syncthing";
+	configDir = "/home/viktor/.config/syncthing";
 };
 
 }
