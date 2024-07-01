@@ -26,6 +26,7 @@ imports =
 	./tmux.nix
 	./nixvim.nix
 	./stylix.nix
+	./syncthing.nix
 
 	inputs.nixvim.nixosModules.nixvim
 ];
@@ -34,8 +35,6 @@ programs.nix-ld = {
 	enable = true;
 	libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
 };
-
-services.syncthing.enable = true;
 
 # Enable CUPS to print documents.
 services.printing.enable = true;
