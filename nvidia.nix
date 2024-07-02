@@ -40,7 +40,7 @@ hardware.nvidia = {
 	powerManagement.finegrained = true;
 	open = false; # Open Source driver
 	nvidiaSettings = true;
-	package = config.boot.kernelPackages.nvidiaPackages.stable;
+	package = config.boot.kernelPackages.nvidiaPackages.beta;
 	
 	prime = {
 		offload.enable = true;
