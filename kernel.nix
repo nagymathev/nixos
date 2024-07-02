@@ -1,6 +1,6 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 {
 
-boot.kernelPackages = pkgs.linuxPackages_zen;
+boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_zen;
 
 }
