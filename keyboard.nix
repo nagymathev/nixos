@@ -1,6 +1,12 @@
 {config, pkgs, ... }:
 {
 
+# Mouse and keyboard preferences
+services.libinput.mouse.accelProfile = "flat";
+services.libinput.mouse.accelSpeed = "0";
+
+services.libinput.touchpad.naturalScrolling = true;
+
 # Configure keymap in X11
 services.xserver = {
 	xkb.layout = "gb";
