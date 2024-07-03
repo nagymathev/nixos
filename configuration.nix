@@ -7,25 +7,28 @@ let
 
 in {
 imports =
-[ # Include the results of the hardware scan.
+[
+	# System
 	./hardware-configuration.nix
 	./gc.nix
 	./nvidia.nix
 	./specialisations.nix
 	./localisation.nix
-	./keyboard.nix
 	./audio.nix
 	./users.nix
 	./networking.nix
 	./boot.nix
-	./system-pkgs.nix
 	./nix-settings.nix
 	./kernel.nix
+	
+	# Personal Settings
+	./system-pkgs.nix
+	./keyboard.nix
 	./desktop.nix
 	./tmux.nix
 	./nixvim.nix
-	# ./stylix.nix
 	./syncthing.nix
+	# ./stylix.nix
 
 	inputs.nixvim.nixosModules.nixvim
 ];
