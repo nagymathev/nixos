@@ -26,8 +26,8 @@ imports =
 	./keyboard.nix
 	./desktop.nix
 	./tmux.nix
-	./nixvim.nix
 	./syncthing.nix
+	# ./nixvim.nix
 	# ./stylix.nix
 
 	inputs.nixvim.nixosModules.nixvim
