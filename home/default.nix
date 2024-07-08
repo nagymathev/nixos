@@ -16,7 +16,7 @@ home.username = "viktor";
 home.homeDirectory = "/home/viktor";
 
 home.file."${config.xdg.configHome}/nvim/" = {
-	source = inputs.nvim;
+	source = config.lib.file.mkOutOfStoreSymlink inputs.nvim;
 	recursive = true;
 };
 
