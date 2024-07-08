@@ -1,4 +1,4 @@
-{ ionfig, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
 
@@ -14,6 +14,11 @@ imports = [
 
 home.username = "viktor";
 home.homeDirectory = "/home/viktor";
+
+home.file."${config.xdg.configHome}/nvim/" = {
+	source = inputs.nvim;
+	recursive = true;
+};
 
 programs.git = {
 	enable = true;
