@@ -453,13 +453,13 @@
       "locked": {
         "lastModified": 1720182846,
         "narHash": "sha256-aBPitb0mQHCjoyE4ECtHtT3YEzUBIxcMlo93quZ4w38=",
-        "owner": "nagymathev",
+        "owner": "peturparkur",
         "repo": "nvim",
         "rev": "f2e977c94438c65764aaf01dd49919636d095049",
         "type": "github"
       },
       "original": {
-        "owner": "nagymathev",
+        "owner": "peturparkur",
         "ref": "main",
         "repo": "nvim",
         "type": "github"
