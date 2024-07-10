@@ -9,7 +9,7 @@ inputs = {
 		inputs.nixpkgs.follows = "nixpkgs";
 	};
 	nvim = {
-		url = "github:peturparkur/nvim/main";
+		url = "github:nagymathev/nvim/main";
 		flake = false;
 	};
 	nixvim = {
