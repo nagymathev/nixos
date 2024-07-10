@@ -448,30 +448,12 @@
         "type": "github"
       }
     },
-    "nvim": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1720182846,
-        "narHash": "sha256-aBPitb0mQHCjoyE4ECtHtT3YEzUBIxcMlo93quZ4w38=",
-        "owner": "peturparkur",
-        "repo": "nvim",
-        "rev": "f2e977c94438c65764aaf01dd49919636d095049",
-        "type": "github"
-      },
-      "original": {
-        "owner": "peturparkur",
-        "ref": "main",
-        "repo": "nvim",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
-        "nvim": "nvim",
         "stylix": "stylix"
       }
     },

@@ -8,10 +8,6 @@ inputs = {
 		url = "github:nix-community/home-manager";
 		inputs.nixpkgs.follows = "nixpkgs";
 	};
-	nvim = {
-		url = "github:nagymathev/nvim/main";
-		flake = false;
-	};
 	nixvim = {
 		url = "github:nix-community/nixvim";
 		inputs.nixpkgs.follows = "nixpkgs";
@@ -50,9 +46,6 @@ in {
 				home-manager.useUserPackages = true;
 				home-manager.backupFileExtension = "backup";
 				home-manager.users.viktor = import ./home;
-				home-manager.extraSpecialArgs = {
-					inherit inputs;
-				};
 			}
 		];
 	};
