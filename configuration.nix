@@ -52,6 +52,14 @@ fonts.packages = with pkgs; [
 	fira-code-nerdfont
 ];
 
+fonts.fontconfig = {
+	enable = true;
+	subpixel.rgba = "rgb";
+	subpixel.lcdfilter = "legacy";
+	hinting.style = "full";
+};
+
+
 # Some programs need SUID wrappers, can be configured further or are
 # started in user sessions.
 # programs.mtr.enable = true;
