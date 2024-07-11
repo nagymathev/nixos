@@ -15,14 +15,6 @@ imports = [
 home.username = "viktor";
 home.homeDirectory = "/home/viktor";
 
-<<<<<<< HEAD
-home.file."${config.xdg.configHome}/nvim/" = {
-	source = config.lib.file.mkOutOfStoreSymlink inputs.nvim;
-	recursive = true;
-};
-
-=======
->>>>>>> parent of dcc1bc5 (add peter's nvim config)
 programs.git = {
 	enable = true;
 	userName = "nagymathev";
