@@ -11,6 +11,7 @@ home.packages = with pkgs; [
 	megasync
 	obsidian
 	anki-bin
+	vesktop
 
 	jetbrains.clion
 
