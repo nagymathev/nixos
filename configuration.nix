@@ -27,10 +27,8 @@ imports =
 	./desktop.nix
 	./tmux.nix
 	./syncthing.nix
-	# ./nixvim.nix
 	# ./stylix.nix
 
-	inputs.nixvim.nixosModules.nixvim
 ];
 
 programs.nix-ld = {
