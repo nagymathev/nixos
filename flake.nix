@@ -8,14 +8,10 @@ inputs = {
 		url = "github:nix-community/home-manager";
 		inputs.nixpkgs.follows = "nixpkgs";
 	};
-	nixvim = {
-		url = "github:nix-community/nixvim";
-		inputs.nixpkgs.follows = "nixpkgs";
-	};
 	stylix.url = "github:danth/stylix";
 };
 
-outputs = { self, nixpkgs, nixos-hardware, home-manager, nixvim, stylix, ... }@inputs:
+outputs = { self, nixpkgs, nixos-hardware, home-manager, stylix, ... }@inputs:
 let
 	system = "x86_64-linux";
 	pkgs = import nixpkgs {
