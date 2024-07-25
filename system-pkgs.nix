@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
 
 environment.systemPackages = with pkgs; [
@@ -11,6 +11,7 @@ environment.systemPackages = with pkgs; [
 	fzf
 	btop
 	just
+	tree
 
 	vscode
 	libreoffice
