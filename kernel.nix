@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
 
-boot.kernelPackages = lib.mkDefault pkgs.linuxPackages_zen;
+boot.kernelPackages = lib.mkForce pkgs.linuxPackages_zen;
 
 }
