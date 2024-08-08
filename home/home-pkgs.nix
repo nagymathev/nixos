@@ -12,6 +12,7 @@ home.packages = with pkgs; [
 	obsidian
 	anki-bin
 	vesktop
+	calibre
 
 	jetbrains.clion
 
