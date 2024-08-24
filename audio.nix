@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 {
 
+environment.systemPackages = with pkgs; [
+	libopenaptx
+	sbc
+]
+
 # Enable sound with pipewire.
 hardware.pulseaudio = {
 	enable = false;
