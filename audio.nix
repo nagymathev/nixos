@@ -3,7 +3,7 @@
 
 # Enable sound with pipewire.
 hardware.pulseaudio = {
-	enable = true;
+	enable = false;
 	package = pkgs.pulseaudioFull;
 };
 
