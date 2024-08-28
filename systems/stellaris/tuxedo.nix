@@ -10,6 +10,7 @@ hardware.tuxedo-rs.tailor-gui.enable = true;
 
 disabledModules = [
 	"hardware/tuxedo-keyboard.nix"
+	"services/hardware/tuxedo-rs.nix"
 ];
 
 import = [
@@ -18,6 +19,10 @@ import = [
 ];
 
 hardware.tuxedo-drivers.enable = true;
+
+boot.kernelPackages = pkgs.linuxKernel.packages.linux_X_X.extend (final: prev: {
+	tuxedo-drivers = inputs.tuxedo.legacyPackages.x86_64-linux.linuxKernel.packages.linux_X_X.tuxedo-drivers;
+});
 
 # Disable backlight with 0 brightness
 boot.kernelParams = [
