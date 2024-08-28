@@ -1,12 +1,20 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 {
 
 # Do not enable tuxedo-rs, it makes things run poorly.
 # Well it runs poorly if the profile is set anything but default.
 # This bug is very silly and I hate it.
-hardware.tuxedo-keyboard.enable = true;
+# hardware.tuxedo-keyboard.enable = true;
 hardware.tuxedo-rs.enable = true;
 hardware.tuxedo-rs.tailor-gui.enable = true;
+
+disabledModules = [
+	"hardware/tuxedo-keyboard.nix"
+];
+
+import = [
+	"${inputs.tuxedo}/nixos/modules/hardware/tuxedo-drivers.nix"
+];
 
 # Disable backlight with 0 brightness
 boot.kernelParams = [
