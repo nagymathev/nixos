@@ -8,8 +8,11 @@ services.xserver.dpi = 144;
 services.xserver.windowManager.i3.enable = true;
 
 # Enable the KDE Plasma Desktop Environment.
-services.desktopManager.plasma6.enable = true;
-services.displayManager.sddm.enable = true;
+services.desktopManager.plasma6.enable = false;
+services.displayManager.sddm.enable = false;
+
+services.xserver.desktopManager.gnome.enable = true;
+services.xserver.displayManager.gdm.enable = true;
 
 programs.hyprland.enable = true;
 
