@@ -18,7 +18,7 @@ import = [
 	"${inputs.tuxedo}/nixos/modules/services/hardware/tuxedo-rs.nix"
 ];
 
-hardware.tuxedo-drivers.enable = true;
+# hardware.tuxedo-drivers.enable = true;
 
 boot.kernelPackages = pkgs.linuxKernel.packages.linux_X_X.extend (final: prev: {
 	tuxedo-drivers = inputs.tuxedo.legacyPackages.x86_64-linux.linuxKernel.packages.linux_X_X.tuxedo-drivers;
