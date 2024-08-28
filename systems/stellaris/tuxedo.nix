@@ -14,7 +14,10 @@ disabledModules = [
 
 import = [
 	"${inputs.tuxedo}/nixos/modules/hardware/tuxedo-drivers.nix"
+	"${inputs.tuxedo}/nixos/modules/services/hardware/tuxedo-rs.nix"
 ];
+
+hardware.tuxedo-drivers.enable = true;
 
 # Disable backlight with 0 brightness
 boot.kernelParams = [
