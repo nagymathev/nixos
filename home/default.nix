@@ -21,6 +21,8 @@ programs.git = {
 	userEmail = "nagymathev@gmail.com";
 };
 
+home.file.".icons/default".source = "${pkgs.vanilla-dmz}/share/icons/Vanilla-DMZ";
+
 home.stateVersion = "24.05";
 programs.home-manager.enable = true;
 
