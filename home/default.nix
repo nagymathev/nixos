@@ -8,7 +8,6 @@ imports = [
 	./steam.nix
 	./hyprland.nix
 	./megasync.nix
-	./pt8.nix
 	./zsh.nix
 ];
 
