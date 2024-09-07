@@ -13,6 +13,7 @@ home.packages = with pkgs; [
 	anki-bin
 	vesktop
 	calibre
+	okular
 
 	jetbrains.clion
 
@@ -20,5 +21,5 @@ home.packages = with pkgs; [
 
 	kitty
 ];
-	
+
 }
