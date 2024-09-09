@@ -21,6 +21,7 @@ imports =
 	./nix-settings.nix
 	./kernel.nix
 	./docker.nix
+	./nvim-lsp.nix
 
 	# Personal Settings
 	./system-pkgs.nix
