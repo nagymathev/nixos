@@ -20,6 +20,7 @@ imports =
 	./boot.nix
 	./nix-settings.nix
 	./kernel.nix
+	./docker.nix
 
 	# Personal Settings
 	./system-pkgs.nix

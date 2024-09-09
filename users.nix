@@ -5,7 +5,7 @@
 users.users.viktor = {
 	isNormalUser = true;
 	description = "viktor";
-	extraGroups = [ "networkmanager" "wheel" ];
+	extraGroups = [ "networkmanager" "wheel" "docker" ];
 	packages = with pkgs; [
 		firefox
 		discord
