@@ -20,7 +20,7 @@ imports =
 	./boot.nix
 	./nix-settings.nix
 	./kernel.nix
-	
+
 	# Personal Settings
 	./system-pkgs.nix
 	./keyboard.nix
@@ -30,6 +30,10 @@ imports =
 	# ./stylix.nix
 
 ];
+
+environment.variables = {
+	NVIM_PROFILE = "HOME"; # this is for the independent nvim configuration at nagymathev/nvim
+};
 
 hardware.enableAllFirmware = true;
 
