@@ -9,6 +9,7 @@ imports = [
 	./hyprland.nix
 	./megasync.nix
 	./zsh.nix
+	./nvim-lsp.nix
 ];
 
 home.username = "viktor";
