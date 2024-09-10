@@ -6,9 +6,12 @@
 		nixd
 		dockerfile-language-server-nodejs
 		docker-compose-language-service
+		yaml-language-server
 		rust-analyzer
 		lua-language-server
 		bash-language-server
 		pylyzer
+		pyright
+		basedpyright
 	];
 }
