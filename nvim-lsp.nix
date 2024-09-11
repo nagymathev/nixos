@@ -13,5 +13,6 @@
 		pylyzer
 		pyright
 		basedpyright
+    vscode-langservers-extracted
 	];
 }
