@@ -15,8 +15,5 @@
 
     # Common
     ../common
-
-    # Other
-    ../../boot.nix
   ];
 }

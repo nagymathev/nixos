@@ -10,5 +10,6 @@
     ./system-pkgs.nix
     ./tmux.nix
     ./users.nix
+    ./boot.nix
   ];
 }
