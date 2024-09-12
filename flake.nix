@@ -48,6 +48,11 @@
       # The PC with the rgb PSU
       nixosConfigurations.equuleus = nixpkgs.lib.nixosSystem {
         inherit system;
+        specialArgs = {
+          inherit inputs;
+          inherit pkgs;
+          inherit lib;
+        };
 
         modules = [
           ./systems/equulius
