@@ -6,32 +6,6 @@
 let
 
 in {
-imports =
-[
-	# System
-	./hardware-configuration.nix
-	./gc.nix
-	./nvidia.nix
-	./specialisations.nix
-	./localisation.nix
-	./audio.nix
-	./users.nix
-	./networking.nix
-	./boot.nix
-	./nix-settings.nix
-	./kernel.nix
-	./docker.nix
-	./nvim-lsp.nix
-
-	# Personal Settings
-	./system-pkgs.nix
-	./keyboard.nix
-	./desktop.nix
-	./tmux.nix
-	./syncthing.nix
-	# ./stylix.nix
-
-];
 
 environment.variables = {
 	NVIM_PROFILE = "HOME"; # this is for the independent nvim configuration at nagymathev/nvim
