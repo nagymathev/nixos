@@ -11,5 +11,6 @@
     ./tmux.nix
     ./users.nix
     ./boot.nix
+    ./kernel.nix
   ];
 }
