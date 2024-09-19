@@ -13,6 +13,8 @@ environment.systemPackages = with pkgs; [
 	just
 	tree
 
+	kitty
+
 	vscode
 	libreoffice
 	vlc
