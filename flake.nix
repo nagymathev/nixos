@@ -55,7 +55,7 @@
         };
 
         modules = [
-          ./systems/equulius
+          ./systems/equuleus
         ];
       };
     };
