@@ -19,15 +19,18 @@
 
   hardware.tuxedo-drivers.enable = true;
 
-  boot.kernelPackages = pkgs.linuxPackages.extend (final: prev: {
-    tuxedo-drivers = prev.callPackage (inputs.tuxedo + "/pkgs/os-specific/linux/tuxedo-keyboard/default.nix") {};
-  });
+  boot = {
+    kernelPackages = pkgs.linuxPackages.extend (final: prev: {
+      tuxedo-drivers = prev.callPackage (inputs.tuxedo + "/pkgs/os-specific/linux/tuxedo-keyboard/default.nix") {};
+    });
 
-  # Disable backlight with 0 brightness
-  boot.kernelParams = [
-    "tuxedo_keyboard.mode=0"
-    "tuxedo_keyboard.brightness=0"
-    "tuxedo_keyboard.color_left=0x000000"
-  ];
+    # Disable backlight with 0 brightness
+    kernelParams = [
+      "tuxedo_keyboard.mode=0"
+      "tuxedo_keyboard.brightness=0"
+      "tuxedo_keyboard.color_left=0x000000"
+    ];
+  };
+
 
 }
