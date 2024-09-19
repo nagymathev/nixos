@@ -1,6 +1,7 @@
 { config, lib, pkgs, ... }:
 {
 
-boot.kernelPackages = lib.mkForce pkgs.linuxPackages_zen;
+  # Can't go to higher kernel versions otherwise the tuxedo-drivers module won't work
+  boot.kernelPackages = lib.mkForce pkgs.linuxPackages_6_9;
 
 }
