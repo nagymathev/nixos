@@ -15,7 +15,7 @@
 
   # hardware.tuxedo-drivers.enable = true;
   hardware.tuxedo-rs.enable = true;
-  inputs.tuxedo.hardware.tuxedo-rs.tailor-gui.enable = true;
+  hardware.tuxedo-rs.tailor-gui.enable = true;
 
   hardware.tuxedo-drivers.enable = true;
 
