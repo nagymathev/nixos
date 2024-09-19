@@ -17,7 +17,9 @@
   hardware.tuxedo-rs.enable = true;
   hardware.tuxedo-rs.tailor-gui.enable = true;
 
-  kernelPackages = pkgs.linuxPackages.extend (final: prev: {
+  hardware.tuxedo-drivers.enable = true;
+
+  boot.kernelPackages = pkgs.linuxPackages.extend (final: prev: {
     tuxedo-drivers = prev.callPackage (inputs.tuxedo + "/pkgs/os-specific/linux/tuxedo-keyboard/default.nix") {};
   });
 
