@@ -26,8 +26,9 @@
 
   # Open ports in the firewall.
   networking.firewall.allowedTCPPorts = [
-    22
-    25565
+    22 # Shh
+    25565 # Minecraft server
+    19999 # NetData
   ];
   networking.firewall.allowedUDPPorts = [ 25565 ];
   # Or disable the firewall altogether.
