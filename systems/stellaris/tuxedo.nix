@@ -20,7 +20,7 @@
   hardware.tuxedo-drivers.enable = true;
 
   boot = {
-    kernelPackages = pkgs.linuxPackages.extend (final: prev: {
+    kernelPackages = pkgs.linuxKernel.packages.linux_X_X.extend (final: prev: {
       tuxedo-drivers = prev.callPackage (inputs.tuxedo + "/pkgs/os-specific/linux/tuxedo-keyboard/default.nix") {};
     });
 
