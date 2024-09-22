@@ -329,16 +329,16 @@
     },
     "tuxedo": {
       "locked": {
-        "lastModified": 1722783617,
-        "narHash": "sha256-aUj0q+j91wTjICSkPgzVHIBl8UeGzlJislCm1caOEaY=",
-        "owner": "CutestNekoAqua",
+        "lastModified": 1726920256,
+        "narHash": "sha256-sx0/7l/2D1VqMJvyT0eGJJrd466aPjE8tvyBEjf4lCQ=",
+        "owner": "xaverdh",
         "repo": "nixpkgs",
-        "rev": "76427d3992c7a2a3293485d8322b98730afd20db",
+        "rev": "2c799a1db3bcc5b1c77cb127d219a1fe8fee864d",
         "type": "github"
       },
       "original": {
-        "owner": "CutestNekoAqua",
-        "ref": "76427d3992c7a2a3293485d8322b98730afd20db",
+        "owner": "xaverdh",
+        "ref": "2c799a1db3bcc5b1c77cb127d219a1fe8fee864d",
         "repo": "nixpkgs",
         "type": "github"
       }

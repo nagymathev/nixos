@@ -17,7 +17,6 @@
   hardware.tuxedo-rs.enable = true;
   hardware.tuxedo-rs.tailor-gui.enable = true;
 
-  hardware.tuxedo-drivers.enable = true;
 
   boot = {
     kernelPackages = pkgs.linuxKernel.packages.linux_6_10.extend (final: prev: {
@@ -32,5 +31,6 @@
     ];
   };
 
+  hardware.tuxedo-drivers.enable = true;
 
 }
