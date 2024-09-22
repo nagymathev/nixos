@@ -9,7 +9,7 @@ inputs = {
 		inputs.nixpkgs.follows = "nixpkgs";
 	};
 	stylix.url = "github:danth/stylix";
-	tuxedo.url = "github:CutestNekoAqua/nixpkgs?ref=76427d3992c7a2a3293485d8322b98730afd20db";
+	tuxedo.url = "github:xaverdh/nixpkgs?ref=2c799a1db3bcc5b1c77cb127d219a1fe8fee864d";
 };
 
   outputs = { self, nixpkgs, nixos-hardware, home-manager, stylix, ... }@inputs:
