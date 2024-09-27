@@ -1,15 +1,17 @@
 {
   description = "My NixOS Flake";
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    stylix.url = "github:danth/stylix";
+inputs = {
+  # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  nixpkgs.url = "github:xaverdh/nixpkgs/tuxedo-drivers";
+  nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+  home-manager = {
+    url = "github:nix-community/home-manager";
+    inputs.nixpkgs.follows = "nixpkgs";
   };
+  stylix.url = "github:danth/stylix";
+  tuxedo.url = "github:xaverdh/nixpkgs?ref=2c799a1db3bcc5b1c77cb127d219a1fe8fee864d";
+};
 
   outputs = { self, nixpkgs, nixos-hardware, home-manager, stylix, ... }@inputs:
     let
