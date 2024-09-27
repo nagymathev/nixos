@@ -38,9 +38,9 @@ hardware.nvidia = {
   modesetting.enable = true;
   powerManagement.enable = true;
   powerManagement.finegrained = true;
-  open = false; # Open Source driver
+  open = true; # Open Source driver
   nvidiaSettings = true;
-  package = config.boot.kernelPackages.nvidiaPackages.production;
+  package = config.boot.kernelPackages.nvidiaPackages.stable;
 
   prime = {
     offload.enable = true;
