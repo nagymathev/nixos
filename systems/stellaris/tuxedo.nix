@@ -1,26 +1,24 @@
 { config, pkgs, inputs, ... }:
 {
 
-  # hardware.tuxedo-keyboard.enable = true;
+  # disabledModules = [
+  #   "hardware/tuxedo-keyboard.nix"
+  #   "services/hardware/tuxedo-rs.nix"
+  # ];
+  #
+  # imports = [
+  #   "${inputs.tuxedo}/nixos/modules/hardware/tuxedo-drivers.nix"
+  #   "${inputs.tuxedo}/nixos/modules/services/hardware/tuxedo-rs.nix"
+  # ];
 
-  disabledModules = [
-    "hardware/tuxedo-keyboard.nix"
-    "services/hardware/tuxedo-rs.nix"
-  ];
-
-  imports = [
-    "${inputs.tuxedo}/nixos/modules/hardware/tuxedo-drivers.nix"
-    "${inputs.tuxedo}/nixos/modules/services/hardware/tuxedo-rs.nix"
-  ];
-
-  # hardware.tuxedo-drivers.enable = true;
   hardware.tuxedo-rs.enable = true;
   hardware.tuxedo-rs.tailor-gui.enable = true;
+  hardware.tuxedo-drivers.enable = true;
 
 
   boot = {
-    kernelPackages = pkgs.linuxKernel.packages.linux_latest.extend (final: prev: {
-      tuxedo-drivers = inputs.tuxedo.legacyPackages.x86_64-linux.linuxKernel.packages.linux_latest.tuxedo-drivers;
+    kernelPackages = pkgs.linuxKernel.packages.linux_6_11.extend (final: prev: {
+      tuxedo-drivers = inputs.tuxedo.legacyPackages.x86_64-linux.linuxKernel.packages.linux_6_11.tuxedo-drivers;
     });
 
     # Disable backlight with 0 brightness
@@ -31,6 +29,5 @@
     ];
   };
 
-  hardware.tuxedo-drivers.enable = true;
 
 }
