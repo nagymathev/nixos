@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 {
 
-boot.kernelPackages = lib.mkForce pkgs.linuxPackages_6_9;
+boot.kernelPackages = lib.mkForce pkgs.linuxPackages_6_6;
 
 }
