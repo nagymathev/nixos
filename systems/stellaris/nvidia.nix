@@ -38,7 +38,7 @@ hardware.nvidia = {
   modesetting.enable = true;
   powerManagement.enable = true;
   powerManagement.finegrained = true;
-  open = true; # Open Source driver
+  open = false; # Open Source driver
   nvidiaSettings = true;
   package = config.boot.kernelPackages.nvidiaPackages.stable;
 
