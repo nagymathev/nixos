@@ -19,8 +19,8 @@
 
 
   boot = {
-    kernelPackages = pkgs.linuxKernel.packages.linux_6_10.extend (final: prev: {
-      tuxedo-drivers = inputs.tuxedo.legacyPackages.x86_64-linux.linuxKernel.packages.linux_6_10.tuxedo-drivers;
+    kernelPackages = pkgs.linuxKernel.packages.linux_latest.extend (final: prev: {
+      tuxedo-drivers = inputs.tuxedo.legacyPackages.x86_64-linux.linuxKernel.packages.linux_latest.tuxedo-drivers;
     });
 
     # Disable backlight with 0 brightness
