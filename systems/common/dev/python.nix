@@ -3,10 +3,11 @@
 with lib;
 
 let
-  cfg = modules.python;
+  cfg = config.modules.python;
 in {
   options.modules.python = {
     enable = mkEnableOption "python tools";
+
     extraPkgs = mkOption {
       default = [];
       example = ''
