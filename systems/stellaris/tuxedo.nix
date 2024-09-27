@@ -19,7 +19,7 @@
 
 
   boot = {
-    kernelPackages = pkgs.linuxPackages_latest.extend (final: prev: {
+    kernelPackages = pkgs.linuxKernel.packages.linux_latest.extend (final: prev: {
       tuxedo-drivers = inputs.tuxedo.legacyPackages.x86_64-linux.linuxKernel.packages.linux_latest.tuxedo-drivers;
     });
 
