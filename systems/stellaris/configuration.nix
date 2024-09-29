@@ -6,7 +6,7 @@
 {
 
   imports = [
-    ../common/dev/python.nix
+    ../../modules/dev/python.nix
   ];
 
   modules.python.enable = true;
