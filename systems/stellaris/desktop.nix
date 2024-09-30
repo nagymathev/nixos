@@ -20,6 +20,7 @@
 
     niri # scrolling window manager
     fuzzel # app finder for niri, similar to wofi
+    waybar # bar for niri
     xwayland-satellite # needed for niri to be able to use x11 apps
   ];
 
