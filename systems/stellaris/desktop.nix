@@ -19,6 +19,7 @@
     swww
 
     niri # scrolling window manager
+    fuzzel # app finder for niri, similar to wofi
   ];
 
 }
