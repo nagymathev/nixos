@@ -17,6 +17,8 @@
   environment.systemPackages = with pkgs; [
     wofi
     swww
+
+    niri # scrolling window manager
   ];
 
 }
