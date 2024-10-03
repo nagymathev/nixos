@@ -34,6 +34,7 @@
   users.defaultUserShell = pkgs.zsh;
   fonts.packages = with pkgs; [
     fira-code-nerdfont
+    font-awesome # required for waybar icons
   ];
 
   fonts.fontconfig = {
