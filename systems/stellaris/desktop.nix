@@ -23,6 +23,9 @@
     waybar # bar for niri
     playerctl # controlling media players (eg. play/pause toggle)
     xwayland-satellite # needed for niri to be able to use x11 apps
+    xdg-desktop-portal
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
   ];
 
 }
