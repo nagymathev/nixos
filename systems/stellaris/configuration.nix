@@ -28,6 +28,7 @@
   programs.direnv.enable = true;
   programs.gamemode.enable = true;
   programs.gamescope.enable = true;
+  services.flatpak.enable = true;
 
   environment.variables.EDITOR = "nvim";
   programs.zsh.enable = true;
