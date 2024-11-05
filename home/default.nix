@@ -10,6 +10,7 @@
     ./megasync.nix
     ./zsh.nix
     ./niri.nix
+    ./waybar.nix
   ];
 
   home.username = "viktor";
