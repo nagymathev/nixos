@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{ pkgs, lib, ... }:
 {
 
   imports = [
@@ -14,6 +14,12 @@
   environment.variables = {
     NVIM_PROFILE = "HOME"; # this is for the independent nvim configuration at nagymathev/nvim
   };
+
+  services.udev.extraRules = lib.mkMerge [
+  ''
+ACTION=="add", SUBSYSTEM=="backlight", RUN+="${pkgs.coreutils-full}/bin/chgrp video /sys/class/backlight/amdgpu_bl1/brightness", RUN+="${pkgs.coreutils-full}/bin/chmod g+w /sys/class/backlight/amdgpu_bl1/brightness"
+  ''
+  ];
 
   hardware.enableAllFirmware = true;
 
