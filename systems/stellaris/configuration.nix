@@ -19,7 +19,7 @@
 
   programs.nix-ld = {
     enable = false;
-    libraries = (pkgs.steam-run.fhsenv.args.multiPkgs pkgs);
+    libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
   };
 
   # Enable CUPS to print documents.
