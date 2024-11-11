@@ -18,7 +18,7 @@
   hardware.enableAllFirmware = true;
 
   programs.nix-ld = {
-    enable = true;
+    enable = false;
     libraries = pkgs.steam-run.fhsenv.args.multiPkgs pkgs;
   };
 
