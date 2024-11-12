@@ -19,6 +19,7 @@
     swww
     eww
     mako
+    libnotify
 
     niri # scrolling window manager
     fuzzel # app finder for niri, similar to wofi
