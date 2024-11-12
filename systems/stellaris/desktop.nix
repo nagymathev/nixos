@@ -17,6 +17,7 @@
   environment.systemPackages = with pkgs; [
     wofi
     swww
+    eww
 
     niri # scrolling window manager
     fuzzel # app finder for niri, similar to wofi
