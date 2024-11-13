@@ -15,6 +15,7 @@
     basedpyright
     vscode-langservers-extracted
     typescript-language-server
+    typescript
     emmet-language-server
   ];
 }
