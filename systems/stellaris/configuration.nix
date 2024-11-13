@@ -25,22 +25,7 @@ ACTION=="add", SUBSYSTEM=="backlight", RUN+="${pkgs.coreutils-full}/bin/chgrp vi
 
   programs.nix-ld = {
     enable = true;
-    libraries = /* pkgs.steam-run.fhsenv.args.multiPkgs pkgs */ with pkgs; [
-      glibc
-      libxcrypt
-      libGL
-
-      libdrm
-      mesa  # for libgbm
-      udev
-      libudev0-shim
-      libva
-      vulkan-loader
-
-      networkmanager  # not documented, used for network status things in Big Picture
-                      # FIXME: figure out how to only build libnm?
-      libcap
-    ];
+    libraries = pkgs.steam-run.args.multiPkgs pkgs;
   };
 
   # Enable CUPS to print documents.
