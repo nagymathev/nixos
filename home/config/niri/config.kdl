@@ -5,6 +5,7 @@
 spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "mako"
+spawn-at-startup "swww-daemon"
 
 environment {
     DISPLAY ":1"
