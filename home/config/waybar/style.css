@@ -6,7 +6,7 @@
 
 window#waybar {
     background-color: #292929;
-    border-bottom: 3px solid #292929;
+    /* border-bottom: 3px solid #292929; */
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -36,7 +36,7 @@ window#waybar.chromium {
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
+    box-shadow: inset 0 -2px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
@@ -45,7 +45,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -2px #ffffff;
 }
 
 /* you can set a style on hover for any module like this */
@@ -65,7 +65,7 @@ button:hover {
 
 #workspaces button.focused {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -2px #ffffff;
 }
 
 #workspaces button.urgent {
@@ -74,7 +74,7 @@ button:hover {
 
 #mode {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -2px #ffffff;
 }
 
 #clock,
@@ -103,6 +103,31 @@ button:hover {
     margin: 0 4px;
 }
 
+.modules-left, .modules-center, .modules-right {
+    /* padding-bottom: 3px; */
+    background: #202020;
+    /* border-bottom: 2px solid #7D7D7D; */
+    box-shadow: inset 0 -2px #7D7D7D;
+}
+
+.modules-left {
+    border-radius: 0 0 10px 0;
+    border-right: 2px solid #7D7D7D;
+}
+
+.modules-right {
+    border-radius: 0 0 0 10px;
+    border-left: 2px solid #7D7D7D;
+    padding-left: 10px;
+}
+
+.modules-center {
+    border-radius: 0 0 10px 10px;
+    border-right: 2px solid #7D7D7D;
+    border-left: 2px solid #7D7D7D;
+    padding: 0 10px;
+}
+
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
@@ -118,14 +143,14 @@ button:hover {
 
 #battery {
     /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
+    box-shadow: inset 0 -2px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
 
 #battery.charging, #battery.plugged {
-    box-shadow: inset 0 -3px #26a65b;
+    box-shadow: inset 0 -2px #26a65b;
 }
 
 @keyframes blink {
@@ -149,22 +174,22 @@ button:hover {
 #power-profiles-daemon {
     padding-right: 15px;
     /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
+    box-shadow: inset 0 -2px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
 
 #power-profiles-daemon.performance {
-    box-shadow: inset 0 -3px #f53c3c;
+    box-shadow: inset 0 -2px #f53c3c;
 }
 
 #power-profiles-daemon.balanced {
-    box-shadow: inset 0 -3px #2980b9;
+    box-shadow: inset 0 -2px #2980b9;
 }
 
 #power-profiles-daemon.power-saver {
-    box-shadow: inset 0 -3px #2ecc71;
+    box-shadow: inset 0 -2px #2ecc71;
 }
 
 label:focus {
