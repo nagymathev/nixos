@@ -8,7 +8,7 @@ services.libinput.mouse.accelSpeed = "0";
 services.libinput.touchpad.naturalScrolling = true;
 
 environment.variables = {
-	XCURSOR_SIZE = lib.mkForce "36";
+	XCURSOR_SIZE = lib.mkForce "32";
 };
 
 # Configure keymap in X11
