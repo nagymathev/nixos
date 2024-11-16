@@ -1,6 +1,8 @@
-{ config, pkgs, ... }:
 {
-
+  config,
+  pkgs,
+  ...
+}: {
   networking.hostName = "equuleus"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -14,7 +16,7 @@
   # Enable the OpenSSH daemon.
   services.openssh = {
     enable = true;
-    ports = [ 22 ];
+    ports = [22];
     settings = {
       PasswordAuthentication = true;
       AllowUsers = null;
@@ -30,8 +32,7 @@
     25565 # Minecraft server
     19999 # NetData
   ];
-  networking.firewall.allowedUDPPorts = [ 25565 ];
+  networking.firewall.allowedUDPPorts = [25565];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
-
 }

@@ -1,5 +1,4 @@
-{ config, ... }:
-{
+{config, ...}: {
   imports = [
     ./audio.nix
     ./desktop.nix

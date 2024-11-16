@@ -1,20 +1,21 @@
-{ config, pkgs, ... }:
 {
+  config,
+  pkgs,
+  ...
+}: {
+  # Bootloader.
+  boot.loader = {
+    timeout = 5;
 
-# Bootloader.
-boot.loader = {
-	timeout = 5;
+    efi = {
+      efiSysMountPoint = "/boot";
+    };
 
-	efi = {
-		efiSysMountPoint = "/boot";
-	};
-
-	grub = {
-		enable = true;
-		devices = [ "nodev" ];
-		efiSupport = true;
-		efiInstallAsRemovable = true;
-	};
-};
-
+    grub = {
+      enable = true;
+      devices = ["nodev"];
+      efiSupport = true;
+      efiInstallAsRemovable = true;
+    };
+  };
 }

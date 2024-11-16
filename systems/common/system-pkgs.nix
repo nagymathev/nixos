@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-{
-
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     vim
     neovim
@@ -34,5 +32,4 @@
     gcc
     nodejs
   ];
-
 }

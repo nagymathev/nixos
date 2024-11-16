@@ -1,5 +1,4 @@
-{ config, ... }:
-{
+{config, ...}: {
   imports = [
     ../common
     ./networking.nix

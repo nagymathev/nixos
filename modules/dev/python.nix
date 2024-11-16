@@ -1,8 +1,10 @@
-{ config, lib, pkgs, ... }:
-
-with lib;
-
-let
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+with lib; let
   cfg = config.modules.python;
 in {
   options.modules.python = {
@@ -21,11 +23,12 @@ in {
   };
 
   config = mkIf cfg.enable {
-    environment.systemPackages = with pkgs; [
-      python3
-      python3Packages.pip
-    ]
-    # Extras
-    ++ cfg.extraPkgs;
+    environment.systemPackages = with pkgs;
+      [
+        python3
+        python3Packages.pip
+      ]
+      # Extras
+      ++ cfg.extraPkgs;
   };
 }

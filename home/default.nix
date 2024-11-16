@@ -1,7 +1,4 @@
-{ pkgs, ... }:
-
-{
-
+{pkgs, ...}: {
   imports = [
     ./home-pkgs.nix
     ./kitty.nix
@@ -34,5 +31,4 @@
 
   home.stateVersion = "24.05";
   programs.home-manager.enable = true;
-
 }

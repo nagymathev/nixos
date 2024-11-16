@@ -1,5 +1,4 @@
-{ config, ... }:
-{
+{config, ...}: {
   imports = [
     ./configuration.nix
     ./docker.nix
