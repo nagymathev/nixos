@@ -24,6 +24,7 @@
     p7zip
     file
     fd
+    xdelta
 
     pciutils
     usbutils
