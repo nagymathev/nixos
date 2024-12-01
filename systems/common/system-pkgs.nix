@@ -17,10 +17,13 @@
     libreoffice
     vlc
 
+    # utils
     zip
     xz
     unzip
     p7zip
+    file
+    fd
 
     pciutils
     usbutils
