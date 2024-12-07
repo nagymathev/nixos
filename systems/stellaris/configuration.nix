@@ -17,11 +17,19 @@
     QT_QPA_PLATFORM = ''"wayland;xcb"'';
     QT_STYLE_OVERRIDE = "adwaita";
     EDITOR = "nvim";
+
+    # These are meant to fix what looks to be lower frame rates on external monitors
+    KWIN_DRM_DEVICES = "/dev/dri/card0:/dev/dri/card1"; # setting devices used by kwin (kde)
+    OGL_DEDICATED_HW_STATE_PER_CONTEXT = "ENABLE_ROBUST"; # nvidia's solution, apparently doesn't work, worth a try
   };
 
   services.udev.extraRules = lib.mkMerge [
     ''
       ACTION=="add", SUBSYSTEM=="backlight", RUN+="${pkgs.coreutils-full}/bin/chgrp video /sys/class/backlight/amdgpu_bl1/brightness", RUN+="${pkgs.coreutils-full}/bin/chmod g+w /sys/class/backlight/amdgpu_bl1/brightness"
+    ''
+    ''
+      KERNEL=="card*",     DRIVERS=="amdgpu",                   SYMLINK+="dri/by-driver/amd-card"
+      KERNEL=="card*",     DRIVERS=="nvidia",                   SYMLINK+="dri/by-driver/nvidia-card"
     ''
   ];
 
