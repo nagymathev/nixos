@@ -14,6 +14,9 @@
 
   environment.variables = {
     NVIM_PROFILE = "HOME"; # this is for the independent nvim configuration at nagymathev/nvim
+    QT_QPA_PLATFORM = ''"wayland;xcb"'';
+    QT_STYLE_OVERRIDE = "adwaita";
+    EDITOR = "nvim";
   };
 
   services.udev.extraRules = lib.mkMerge [
@@ -37,8 +40,6 @@
   programs.gamescope.enable = true;
   services.flatpak.enable = true;
 
-  environment.variables.EDITOR = "nvim";
-  environment.variables.QT_QPA_PLATFORM = ''"wayland;xcb"'';
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   fonts.packages = with pkgs; [
