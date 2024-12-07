@@ -26,6 +26,8 @@
     fd
     xdelta
 
+    adwaita-qt6
+
     pciutils
     usbutils
     lm_sensors

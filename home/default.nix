@@ -29,6 +29,6 @@
     x11.defaultCursor = "Vanilla-DMZ";
   };
 
-  home.stateVersion = "24.05";
+  home.stateVersion = "25.05";
   programs.home-manager.enable = true;
 }

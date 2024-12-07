@@ -38,6 +38,7 @@
   services.flatpak.enable = true;
 
   environment.variables.EDITOR = "nvim";
+  environment.variables.QT_QPA_PLATFORM = ''"wayland;xcb"'';
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   fonts.packages = with pkgs; [
