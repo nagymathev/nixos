@@ -31,6 +31,7 @@
       hardware.nvidia = {
         prime.offload.enable = lib.mkForce false;
         prime.offload.enableOffloadCmd = lib.mkForce false;
+        prime.reverseSync.enable = lib.mkForce false;
         powerManagement.enable = lib.mkForce false;
         powerManagement.finegrained = lib.mkForce false;
 
