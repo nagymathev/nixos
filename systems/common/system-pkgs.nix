@@ -27,6 +27,7 @@
     xdelta
 
     adwaita-qt6
+    adwaita-qt
 
     pciutils
     usbutils
