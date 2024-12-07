@@ -8,6 +8,8 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
 
+  services.xserver.desktopManager.xfce.enable = true;
+
   # services.xserver.desktopManager.gnome.enable = true;
   # services.xserver.displayManager.gdm.enable = true;
 
