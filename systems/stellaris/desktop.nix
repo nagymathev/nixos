@@ -12,6 +12,7 @@
   # services.xserver.displayManager.gdm.enable = true;
 
   programs.hyprland.enable = true;
+  programs.niri.enable = true;
 
   environment.systemPackages = with pkgs; [
     wofi
