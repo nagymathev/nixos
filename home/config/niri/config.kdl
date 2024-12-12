@@ -95,13 +95,13 @@ output "eDP-1" {
 }
 
 output "DP-5" {
-    mode "1920x1080@119.879"
+    mode "1920x1080@60.000"
     variable-refresh-rate
-    position x=2560 y=0
+    position x=4480 y=0
 }
 output "HDMI-A-1" {
     mode "1920x1080@60.000"
-    position x=4480 y=0
+    position x=2560 y=0
 }
 
 // Settings that influence how windows are positioned and sized.
