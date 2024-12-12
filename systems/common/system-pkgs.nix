@@ -12,6 +12,7 @@
     tree
 
     kitty
+    chromium
 
     vscode
     libreoffice
