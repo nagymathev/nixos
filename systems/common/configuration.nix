@@ -12,6 +12,7 @@ in {
     NVIM_PROFILE = "HOME"; # this is for the independent nvim configuration at nagymathev/nvim
   };
 
+  programs.wireshark.enable = true;
   environment.variables.EDITOR = "nvim";
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;

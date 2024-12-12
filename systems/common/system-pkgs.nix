@@ -14,7 +14,6 @@
 
     kitty
     chromium
-    wireshark
 
     vscode
     libreoffice
