@@ -10,6 +10,7 @@
     btop
     just
     tree
+    dig
 
     kitty
     chromium
