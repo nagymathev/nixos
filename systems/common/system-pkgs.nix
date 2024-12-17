@@ -18,6 +18,7 @@
     vscode
     libreoffice
     vlc
+    texliveFull
 
     # utils
     zip
