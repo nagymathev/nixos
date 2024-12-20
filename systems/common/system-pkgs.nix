@@ -19,7 +19,6 @@
     libreoffice
     vlc
     texliveFull
-    texmaker
 
     # utils
     zip
