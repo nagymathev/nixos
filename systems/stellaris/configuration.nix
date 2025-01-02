@@ -12,6 +12,8 @@
 
   modules.python.enable = true;
 
+  programs.steam.enable = true;
+
   environment.variables = {
     NVIM_PROFILE = "HOME"; # this is for the independent nvim configuration at nagymathev/nvim
     QT_QPA_PLATFORM = ''"wayland;xcb"'';

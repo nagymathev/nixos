@@ -13,7 +13,6 @@
       firefox
       discord
       thunderbird
-      steam
       protonup-qt
       heroic
       bottles
