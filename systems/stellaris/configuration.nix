@@ -19,17 +19,13 @@
     EDITOR = "nvim";
 
     # These are meant to fix what looks to be lower frame rates on external monitors
-    KWIN_DRM_DEVICES = "/dev/dri/card0:/dev/dri/card1"; # setting devices used by kwin (kde)
-    OGL_DEDICATED_HW_STATE_PER_CONTEXT = "ENABLE_ROBUST"; # nvidia's solution, apparently doesn't work, worth a try
+#    KWIN_DRM_DEVICES = "/dev/dri/card0:/dev/dri/card1"; # setting devices used by kwin (kde)
+#    OGL_DEDICATED_HW_STATE_PER_CONTEXT = "ENABLE_ROBUST"; # nvidia's solution, apparently doesn't work, worth a try
   };
 
   services.udev.extraRules = lib.mkMerge [
     ''
       ACTION=="add", SUBSYSTEM=="backlight", RUN+="${pkgs.coreutils-full}/bin/chgrp video /sys/class/backlight/amdgpu_bl1/brightness", RUN+="${pkgs.coreutils-full}/bin/chmod g+w /sys/class/backlight/amdgpu_bl1/brightness"
-    ''
-    ''
-      KERNEL=="card*",     DRIVERS=="amdgpu",                   SYMLINK+="dri/by-driver/amd-card"
-      KERNEL=="card*",     DRIVERS=="nvidia",                   SYMLINK+="dri/by-driver/nvidia-card"
     ''
   ];
 
@@ -60,7 +56,7 @@
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
   fonts.packages = with pkgs; [
-    nerd-fonts.fira-code
+    fira-code-nerdfont
     font-awesome # required for waybar icons
   ];
 
@@ -85,5 +81,5 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "unstable"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
 }

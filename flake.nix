@@ -2,7 +2,7 @@
   description = "My NixOS Flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -62,7 +62,7 @@
 
         # SECURE BOOT SETUP
 
-        lanzaboote.nixosModules.lanzaboote
+          #        lanzaboote.nixosModules.lanzaboote
 
         ({ pkgs, lib, ... }: {
 
@@ -75,12 +75,12 @@
           # This setting is usually set to true in configuration.nix
           # generated at installation time. So we force it to false
           # for now.
-          boot.loader.systemd-boot.enable = lib.mkForce false;
-
-          boot.lanzaboote = {
-            enable = true;
-            pkiBundle = "/var/lib/sbctl";
-          };
+#          boot.loader.systemd-boot.enable = lib.mkForce false;
+#
+#          boot.lanzaboote = {
+#            enable = true;
+#            pkiBundle = "/var/lib/sbctl";
+#          };
         })
       ];
     };
