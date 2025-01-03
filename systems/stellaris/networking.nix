@@ -4,7 +4,7 @@
   ...
 }: {
   networking.hostName = "stellaris"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   # networking.extraHosts = ''
   #   192.168.0.34 equuleus
   # '';
