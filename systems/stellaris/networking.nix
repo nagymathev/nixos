@@ -14,8 +14,7 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
-  networking.networkmanager.enable = false;
-  services.connman.enable = true;
+  networking.networkmanager.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
