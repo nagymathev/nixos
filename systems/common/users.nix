@@ -24,6 +24,8 @@
       vesktop
       calibre
       okular
+      spotube
+      freecad
 
       jetbrains.clion
 
