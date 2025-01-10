@@ -26,6 +26,7 @@
       okular
       spotube
       freecad
+      openscad-unstable
 
       jetbrains.clion
 
