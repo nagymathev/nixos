@@ -13,6 +13,7 @@
       firefox
       discord
       thunderbird
+      bitwarden-desktop
       protonup-qt
       heroic
       bottles
