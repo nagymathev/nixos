@@ -8,7 +8,7 @@
     isNormalUser = true;
     description = "viktor";
     hashedPassword = "$y$j9T$LGJSMQmQVLLsGxnwwG9Bi/$g7SURzJ453pqVUgJmCotMZ.gBif8cSPK3o16UcxB6.7";
-    extraGroups = ["networkmanager" "wireshark" "wheel" "docker" "video"];
+    extraGroups = ["networkmanager" "wireshark" "wheel" "docker" "video" "dialout"];
     packages = with pkgs; [
       firefox
       discord
