@@ -19,7 +19,6 @@
       bottles
       lutris
       prismlauncher
-      megasync
       obsidian
       anki-bin
       vesktop
