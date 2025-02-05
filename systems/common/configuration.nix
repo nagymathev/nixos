@@ -11,6 +11,7 @@
 in {
   environment.variables = {
     NVIM_PROFILE = "HOME"; # this is for the independent nvim configuration at nagymathev/nvim
+    ELECTRON_OZONE_PLATFORM_HINT = "wayland";
   };
 
   programs.wireshark.enable = true;
