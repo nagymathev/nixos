@@ -21,8 +21,8 @@
     EDITOR = "nvim";
 
     # These are meant to fix what looks to be lower frame rates on external monitors
-    #    KWIN_DRM_DEVICES = "/dev/dri/card0:/dev/dri/card1"; # setting devices used by kwin (kde)
-    #    OGL_DEDICATED_HW_STATE_PER_CONTEXT = "ENABLE_ROBUST"; # nvidia's solution, apparently doesn't work, worth a try
+#    KWIN_DRM_DEVICES = "/dev/dri/card0:/dev/dri/card1"; # setting devices used by kwin (kde)
+#    OGL_DEDICATED_HW_STATE_PER_CONTEXT = "ENABLE_ROBUST"; # nvidia's solution, apparently doesn't work, worth a try
   };
 
   services.udev.extraRules = lib.mkMerge [
