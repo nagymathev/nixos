@@ -39,18 +39,20 @@
         "electron-25.9.0"
       ];
     };
+    customPkgs = nixpkgs.legacyPackages.x86_64-linux;
     lib = nixpkgs.lib;
   in {
     nixosConfigurations.stellaris = nixpkgs.lib.nixosSystem {
       inherit system;
       specialArgs = {
         inherit inputs;
-        inherit pkgs;
+        pkgs = customPkgs;
         inherit lib;
       };
       modules = [
         ./systems/stellaris
         nixos-hardware.nixosModules.tuxedo-pulse-14-gen3
+        nixpkgs.nixosModules.readOnlyPkgs
 
         home-manager.nixosModules.home-manager
         {
@@ -62,10 +64,13 @@
 
         # SECURE BOOT SETUP
 
-          #        lanzaboote.nixosModules.lanzaboote
+        #        lanzaboote.nixosModules.lanzaboote
 
-        ({ pkgs, lib, ... }: {
-
+        ({
+          pkgs,
+          lib,
+          ...
+        }: {
           environment.systemPackages = [
             # For debugging and troubleshooting Secure Boot.
             pkgs.sbctl
@@ -75,12 +80,12 @@
           # This setting is usually set to true in configuration.nix
           # generated at installation time. So we force it to false
           # for now.
-#          boot.loader.systemd-boot.enable = lib.mkForce false;
-#
-#          boot.lanzaboote = {
-#            enable = true;
-#            pkiBundle = "/var/lib/sbctl";
-#          };
+          #          boot.loader.systemd-boot.enable = lib.mkForce false;
+          #
+          #          boot.lanzaboote = {
+          #            enable = true;
+          #            pkiBundle = "/var/lib/sbctl";
+          #          };
         })
       ];
     };
