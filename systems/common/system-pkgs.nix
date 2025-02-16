@@ -7,7 +7,7 @@
     curl
     ripgrep
     fzf
-    btop
+    btop-rocm
     just
     tree
     dig
