@@ -25,6 +25,11 @@
 #    OGL_DEDICATED_HW_STATE_PER_CONTEXT = "ENABLE_ROBUST"; # nvidia's solution, apparently doesn't work, worth a try
   };
 
+  services.xserver = {
+    xkb.layout = "us";
+    xkb.variant = "";
+  };
+
   services.udev.extraRules = lib.mkMerge [
     ''
       ACTION=="add", SUBSYSTEM=="backlight", RUN+="${pkgs.coreutils-full}/bin/chgrp video /sys/class/backlight/amdgpu_bl1/brightness", RUN+="${pkgs.coreutils-full}/bin/chmod g+w /sys/class/backlight/amdgpu_bl1/brightness"
