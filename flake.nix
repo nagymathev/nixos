@@ -85,6 +85,27 @@
       ];
     };
 
+    nixosConfigurations.icarus = nixpkgs.lib.nixosSystem {
+      inherit system;
+      specialArgs = {
+        inherit inputs;
+        inherit pkgs;
+        inherit lib;
+      };
+      modules = [
+        ./systems/icarus
+
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "backup";
+          home-manager.users.viktor = import ./home;
+        }
+
+      ];
+    };
+
     # The PC with the rgb PSU
     nixosConfigurations.equuleus = nixpkgs.lib.nixosSystem {
       inherit system;
