@@ -6,7 +6,6 @@
     ./kernel.nix
     ./networking.nix
     ./nvim-lsp.nix
-    ./specialisations.nix
     ./syncthing.nix
     ./configuration.nix
 
