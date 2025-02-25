@@ -8,6 +8,7 @@
     ./nvim-lsp.nix
     ./syncthing.nix
     ./configuration.nix
+    ./graphics.nix
 
     # Common
     ../common
