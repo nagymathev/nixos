@@ -21,7 +21,7 @@
       obsidian
       anki-bin
       vesktop
-      okular
+      kdePackages.okular
       spotube
 
       mangohud
