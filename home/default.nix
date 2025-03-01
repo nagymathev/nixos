@@ -1,6 +1,5 @@
 {pkgs, ...}: {
   imports = [
-    ./home-pkgs.nix
     ./kitty.nix
     ./steam.nix
     ./hyprland.nix
