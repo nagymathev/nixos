@@ -1,5 +1,4 @@
 {
-  config,
   pkgs,
   ...
 }: {
@@ -22,13 +21,8 @@
       obsidian
       anki-bin
       vesktop
-      calibre
       okular
       spotube
-      freecad
-      openscad-unstable
-
-      jetbrains.clion
 
       mangohud
 
