@@ -27,6 +27,8 @@
       mangohud
 
       kitty
+
+      (callPackage ../../packages/zen.nix {})
     ];
   };
 }
