@@ -5,15 +5,21 @@
 }
 
 window#waybar {
-    background-color: #292929;
+    /* background-color: #292929; */
+    background: rgba(0, 0, 0, 0);
     /* border-bottom: 3px solid #292929; */
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: rgba(12, 12, 12, 1);
     transition-property: background-color;
     transition-duration: .5s;
 }
 
 window#waybar.hidden {
     opacity: 0.2;
+}
+
+window#waybar.empty #window {
+    background: rgba(0, 0, 0, 0.0);
 }
 
 /*
@@ -56,7 +62,8 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: rgba(12, 12, 12, 1);
 }
 
 #workspaces button:hover {
@@ -95,7 +102,8 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: rgba(12, 12, 12, 1);
 }
 
 #window,
@@ -103,43 +111,45 @@ button:hover {
     margin: 0 4px;
 }
 
-.modules-left, .modules-center, .modules-right {
+.modules-left,
+.modules-center,
+.modules-right {
     /* padding-bottom: 3px; */
-    background: #202020;
+    /* background: #202020; */
+    background: rgba(0, 0, 0, 0);
     /* border-bottom: 2px solid #7D7D7D; */
-    box-shadow: inset 0 -2px #7D7D7D;
+    /* box-shadow: inset 0 -2px #7D7D7D; */
 }
 
 .modules-left {
-    border-radius: 0 0 10px 0;
-    border-right: 2px solid #7D7D7D;
+    /* border-radius: 0 0 10px 0; */
+    /* border-right: 2px solid #7D7D7D; */
 }
 
 .modules-right {
-    border-radius: 0 0 0 10px;
-    border-left: 2px solid #7D7D7D;
+    /* border-radius: 0 0 0 10px; */
+    /* border-left: 2px solid #7D7D7D; */
     padding-left: 10px;
 }
 
 .modules-center {
-    border-radius: 0 0 10px 10px;
-    border-right: 2px solid #7D7D7D;
-    border-left: 2px solid #7D7D7D;
+    /* border-radius: 0 0 10px 10px; */
+    /* border-right: 2px solid #7D7D7D; */
+    /* border-left: 2px solid #7D7D7D; */
     padding: 0 10px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
     margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
+.modules-right>widget:last-child>#workspaces {
     margin-right: 0;
 }
 
-#clock {
-}
+#clock {}
 
 #battery {
     /* Use box-shadow instead of border so the text isn't offset */
@@ -149,7 +159,8 @@ button:hover {
     border-radius: 0;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
     box-shadow: inset 0 -2px #26a65b;
 }
 
@@ -196,27 +207,21 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-}
+#cpu {}
 
-#memory {
-}
+#memory {}
 
-#disk {
-}
+#disk {}
 
-#backlight {
-}
+#backlight {}
 
-#network {
-}
+#network {}
 
 #network.disconnected {
     background-color: #f53c3c;
 }
 
-#pulseaudio {
-}
+#pulseaudio {}
 
 #pulseaudio.muted {
     background-color: #90b1b1;
@@ -246,21 +251,19 @@ label:focus {
     background-color: #ffa000;
 }
 
-#temperature {
-}
+#temperature {}
 
 #temperature.critical {
     background-color: #eb4d4b;
 }
 
-#tray {
-}
+#tray {}
 
-#tray > .passive {
+#tray>.passive {
     -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
