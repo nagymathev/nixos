@@ -33,14 +33,17 @@
     libraries = pkgs.steam-run.args.multiPkgs pkgs;
   };
 
-  # virtualisation.virtualbox = {
-  #   guest.enable = true;
-  #   host = {
-  #     enable = true;
-  #     enableKvm = true;
-  #     addNetworkInterface = false;
-  #   };
-  # };
+  # Virtualbox
+  virtualisation.virtualbox = {
+    guest.enable = true;
+    guest.dragAndDrop = true;
+    host = {
+      enable = true;
+      enableKvm = true;
+      addNetworkInterface = false;
+    };
+  };
+  users.extraGroups.vboxusers.members = [ "viktor" ];
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
