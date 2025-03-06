@@ -39,8 +39,8 @@
     guest.dragAndDrop = true;
     host = {
       enable = true;
-      enableKvm = true;
-      addNetworkInterface = false;
+      enableKvm = false;
+      addNetworkInterface = true;
     };
   };
   users.extraGroups.vboxusers.members = [ "viktor" ];
