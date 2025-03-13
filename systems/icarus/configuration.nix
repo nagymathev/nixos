@@ -20,7 +20,6 @@
     QT_STYLE_OVERRIDE = "adwaita";
     EDITOR = "nvim";
   };
-
   services.xserver = {
     xkb.layout = "us";
     xkb.variant = "";
@@ -44,6 +43,11 @@
     };
   };
   users.extraGroups.vboxusers.members = [ "viktor" ];
+
+  environment.systemPackages = with pkgs; [
+    gns3-gui
+    gns3-server
+  ];
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
