@@ -4,7 +4,7 @@ alias uh := update-home
 alias t := test
 
 switch:
-	sudo nixos-rebuild switch
+	sudo nixos-rebuild switch --flake .
 boot:
 	sudo nixos-rebuild boot
 update:
