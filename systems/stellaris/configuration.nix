@@ -20,9 +20,13 @@
     QT_STYLE_OVERRIDE = "adwaita";
     EDITOR = "nvim";
 
-    # These are meant to fix what looks to be lower frame rates on external monitors
-    #    KWIN_DRM_DEVICES = "/dev/dri/card0:/dev/dri/card1"; # setting devices used by kwin (kde)
-    #    OGL_DEDICATED_HW_STATE_PER_CONTEXT = "ENABLE_ROBUST"; # nvidia's solution, apparently doesn't work, worth a try
+    QT_AUTO_SCREEN_SET_FACTOR = 1;
+    QT_ENABLE_HIGHDPI_SCALING = 1;
+    QT_SCREEN_SCALE_FACTORS = ''"2;1;1"'';
+    QT_SCALE_FACTOR = 1;
+    QT_FONT_DPI = 96;
+    GDK_SCALE = 1;
+    GDK_DPI_SCALE=1;
   };
 
   services.udev.extraRules = lib.mkMerge [
