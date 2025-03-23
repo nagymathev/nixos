@@ -4,11 +4,13 @@
   services.xserver.dpi = 96;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.desktopManager.plasma6.enable = true;
+  services.desktopManager.plasma6.enable = false;
   services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  services.displayManager.sddm.wayland.enable = false;
 
-  # services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.cinnamon.enable = false;
+  services.xserver.desktopManager.enlightenment.enable = false;
   # services.xserver.displayManager.gdm.enable = true;
 
   programs.hyprland.enable = true;
