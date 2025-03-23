@@ -13,8 +13,8 @@
   services.xserver.desktopManager.enlightenment.enable = false;
   # services.xserver.displayManager.gdm.enable = true;
 
-  programs.hyprland.enable = true;
-  programs.niri.enable = true;
+  programs.hyprland.enable = false;
+  programs.niri.enable = false;
 
   environment.systemPackages = with pkgs; [
     wofi
