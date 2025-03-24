@@ -9,9 +9,14 @@
   services.displayManager.sddm.wayland.enable = false;
 
   services.xserver.desktopManager.gnome.enable = false;
-  services.xserver.desktopManager.cinnamon.enable = true;
-  services.xserver.desktopManager.enlightenment.enable = false;
+  services.xserver.desktopManager.cinnamon.enable = false;
+  services.xserver.desktopManager.enlightenment.enable = true;
   services.xserver.displayManager.gdm.enable = true;
+
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = with pkgs; [
+    xdg-desktop-portal-gtk
+  ];
 
   programs.hyprland.enable = false;
   programs.niri.enable = false;
