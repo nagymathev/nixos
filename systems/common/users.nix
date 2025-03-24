@@ -28,7 +28,6 @@
 
       kitty
 
-      (callPackage ../../packages/zen.nix {})
     ];
   };
 }
