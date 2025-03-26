@@ -28,6 +28,14 @@
     x11.defaultCursor = "Vanilla-DMZ";
   };
 
+  gtk = {
+    enable = true;
+    iconTheme = {
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
+    };
+  };
+
   home.stateVersion = "25.05";
   programs.home-manager.enable = true;
 }
