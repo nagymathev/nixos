@@ -48,6 +48,7 @@
   boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 
   environment.systemPackages = with pkgs; [
+    pandoc
   ];
 
   # Enable CUPS to print documents.
