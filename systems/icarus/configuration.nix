@@ -48,8 +48,6 @@
   boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 
   environment.systemPackages = with pkgs; [
-    gns3-gui
-    gns3-server
   ];
 
   # Enable CUPS to print documents.
