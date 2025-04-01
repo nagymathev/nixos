@@ -23,6 +23,7 @@
       vesktop
       kdePackages.okular
       spotube
+      youtube-music
 
       mangohud
 
