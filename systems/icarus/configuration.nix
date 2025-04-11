@@ -63,6 +63,7 @@
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code
     font-awesome # required for waybar icons
+    cascadia-code
   ];
 
   fonts.fontconfig = {
