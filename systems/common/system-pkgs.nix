@@ -14,6 +14,7 @@
 
     kitty
     chromium
+    brave
 
     vscode
     libreoffice
