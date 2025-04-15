@@ -8,7 +8,7 @@ switch:
 boot:
 	sudo nixos-rebuild boot
 update:
-	sudo nix flake update
+	nix flake update
 update-home:
 	sudo nix flake lock --update-input home-manager
 test:
