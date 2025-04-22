@@ -42,5 +42,6 @@
     rustc
     gcc
     nodejs
+    kubectl
   ];
 }
