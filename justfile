@@ -4,6 +4,7 @@ alias uh := update-home
 alias t := test
 
 switch:
+	find ~ -name "*.hmbackup" -delete
 	sudo nixos-rebuild switch --flake .
 boot:
 	sudo nixos-rebuild boot
