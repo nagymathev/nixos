@@ -21,6 +21,7 @@
       la = "ls -al";
 
       k = "kubectl";
+      ssh = "kitty +kitten ssh";
     };
 
     oh-my-zsh = {
