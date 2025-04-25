@@ -4,13 +4,22 @@
 {
   pkgs,
   lib,
+  inputs,
+  config,
   ...
 }: {
   imports = [
     ../../modules/dev/python.nix
+    ../../modules/dev/tailscale.nix
   ];
 
   modules.python.enable = true;
+  modules.tailscale = {
+    enable = true;
+    autoconnect = true;
+    authKey = config.sops.secrets.tskey-auth.path;
+  };
+  sops.secrets.tskey-auth = {};
 
   programs.steam.enable = true;
 
