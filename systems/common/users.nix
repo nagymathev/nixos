@@ -22,7 +22,6 @@
       anki-bin
       vesktop
       kdePackages.okular
-      spotube
       youtube-music
 
       mangohud
