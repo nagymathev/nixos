@@ -44,6 +44,12 @@
       modules = [
         ./systems/stellaris
         nixos-hardware.nixosModules.tuxedo-pulse-14-gen3
+        sops-nix.nixosModules.sops
+        ({...}: {
+          sops.defaultSopsFile = ./secrets/secrets.yaml;
+          sops.defaultSopsFormat = "yaml";
+          sops.age.keyFile = "/home/viktor/.config/sops/age/keys.txt";
+        })
 
         home-manager.nixosModules.home-manager
         {

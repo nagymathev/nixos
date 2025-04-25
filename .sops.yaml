@@ -1,0 +1,7 @@
+keys:
+  - &viktor age1zdq2p6c55dsrnghme3xqel6y6j5kmdv3v5aemv59y75qgfs5dflsyy8dcs
+creation_rules:
+  - path_regex: secrets/[^/]+\.(yaml|json|env|ini)$
+    key_groups:
+    - age:
+      - *viktor
