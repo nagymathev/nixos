@@ -21,6 +21,9 @@
   };
   sops.secrets.tskey-auth = {};
 
+  services.k3s.enable = true;
+  services.k3s.role = "server";
+
   programs.steam.enable = true;
 
   environment.variables = {
