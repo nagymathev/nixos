@@ -19,6 +19,8 @@
 
       ll = "ls -l";
       la = "ls -al";
+
+      k = "kubectl";
     };
 
     oh-my-zsh = {
@@ -26,6 +28,8 @@
       plugins = [
         "git"
         "direnv"
+        "kubectl"
+        "docker-compose"
       ];
       theme = "philips";
     };
