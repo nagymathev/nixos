@@ -21,6 +21,8 @@
       la = "ls -al";
 
       k = "kubectl";
+      kns = "kubens";
+      ktx = "kubectx";
       ssh = "kitty +kitten ssh";
     };
 

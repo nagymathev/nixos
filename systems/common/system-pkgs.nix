@@ -43,5 +43,6 @@
     gcc
     nodejs
     kubectl
+    kubectx
   ];
 }
