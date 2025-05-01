@@ -44,5 +44,6 @@
     nodejs
     kubectl
     kubectx
+    treefmt
   ];
 }
