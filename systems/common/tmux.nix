@@ -14,5 +14,8 @@
       gruvbox
       resurrect
     ];
+    extraConfig = ''
+set -g mouse on
+    '';
   };
 }

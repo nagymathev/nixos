@@ -20,6 +20,7 @@
       ll = "ls -l";
       la = "ls -al";
 
+      j = "just";
       k = "kubectl";
       kns = "kubens";
       ktx = "kubectx";
