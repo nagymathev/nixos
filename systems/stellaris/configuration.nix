@@ -31,14 +31,10 @@
     QT_QPA_PLATFORM = ''"wayland;xcb"'';
     QT_STYLE_OVERRIDE = "adwaita";
     EDITOR = "nvim";
+  };
 
-    # QT_AUTO_SCREEN_SET_FACTOR = 1;
-    # QT_ENABLE_HIGHDPI_SCALING = 1;
-    # QT_SCREEN_SCALE_FACTORS = ''"2;1;1"'';
-    # QT_SCALE_FACTOR = 1;
-    # QT_FONT_DPI = 96;
-    # GDK_SCALE = 1;
-    # GDK_DPI_SCALE=1;
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
   };
 
   services.udev.extraRules = lib.mkMerge [
