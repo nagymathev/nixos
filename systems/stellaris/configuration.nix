@@ -62,6 +62,9 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Useful for sharing data between phone and pc on local network
+  programs.kdeconnect.enable = true;
+
   programs.direnv.enable = true;
   programs.gamemode.enable = true;
   programs.gamescope.enable = true;
