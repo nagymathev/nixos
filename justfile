@@ -4,7 +4,7 @@ alias uh := update-home
 alias t := test
 
 switch:
-	rm ~/.gtkrc-2.0.hmbackup
+	rm -f -- ~/.gtkrc-2.0.hmbackup
 	find ~/.config -name "*.hmbackup" -print -delete
 	sudo nixos-rebuild switch --flake .
 boot:
