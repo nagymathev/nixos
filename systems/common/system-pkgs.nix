@@ -45,5 +45,6 @@
     kubectl
     kubectx
     treefmt
+    nixfmt-rfc-style
   ];
 }
