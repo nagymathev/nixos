@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -25,6 +26,7 @@
       kns = "kubens";
       ktx = "kubectx";
       ssh = "kitty +kitten ssh";
+      nd = "nix develop";
     };
 
     oh-my-zsh = {
@@ -38,7 +40,7 @@
       theme = "philips";
     };
 
-    initExtra = ''
+    initContent = ''
       bindkey '\e[H' beginning-of-line
       bindkey '\eOH' beginning-of-line
       bindkey '\e[F' end-of-line

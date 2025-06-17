@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.dpi = 96;
@@ -7,11 +8,6 @@
   services.desktopManager.plasma6.enable = true;
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
-
-  services.xserver.desktopManager.gnome.enable = false;
-  services.xserver.desktopManager.cinnamon.enable = false;
-  services.xserver.desktopManager.enlightenment.enable = false;
-  services.xserver.displayManager.gdm.enable = false;
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = with pkgs; [
