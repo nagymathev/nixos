@@ -1,6 +1,8 @@
-{config, ...}: {
+{ config, ... }:
+{
   # Set your time zone.
-  time.timeZone = "Europe/Budapest";
+  # time.timeZone = "Europe/Budapest";
+  services.automatic-timezoned.enable = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF-8";
