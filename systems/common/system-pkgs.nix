@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   environment.systemPackages = with pkgs; [
     vim
     neovim
@@ -46,5 +47,6 @@
     kubectx
     treefmt
     nixfmt-rfc-style
+    lua5_4
   ];
 }
