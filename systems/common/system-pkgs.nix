@@ -42,6 +42,7 @@
     cargo
     rustc
     gcc
+    cmake
     nodejs
     kubectl
     kubectx

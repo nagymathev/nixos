@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   environment.systemPackages = with pkgs; [
     wl-clipboard
     tree-sitter
@@ -11,6 +12,8 @@
     docker-compose-language-service
     yaml-language-server
     rust-analyzer
+    cmake-language-server
+    clang
     lua-language-server
     bash-language-server
     pylyzer
