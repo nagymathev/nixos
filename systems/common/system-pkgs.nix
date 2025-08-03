@@ -45,6 +45,8 @@
     cargo
     rustc
     gcc
+    clang
+    clang-tools
     cmake
     nodejs
     kubectl
