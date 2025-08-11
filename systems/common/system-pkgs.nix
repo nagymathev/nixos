@@ -22,6 +22,9 @@
     vlc
     texliveFull
 
+    gdu
+    kdePackages.filelight
+
     # utils
     zip
     xz
