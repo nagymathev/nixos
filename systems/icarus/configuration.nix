@@ -5,7 +5,8 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   imports = [
     ../../modules/dev/python.nix
   ];
@@ -32,21 +33,7 @@
     libraries = pkgs.steam-run.args.multiPkgs pkgs;
   };
 
-  # Virtualbox
-  virtualisation.virtualbox = {
-    guest.enable = true;
-    guest.dragAndDrop = true;
-    host = {
-      enable = true;
-      enableKvm = false;
-      addNetworkInterface = true;
-    };
-  };
   users.extraGroups.vboxusers.members = [ "viktor" ];
-  # This is a workaround the fact that apparently VirtualBox fails to boot VMs
-  # with kernel 6.12, or above maybe, as of writing I have 6.13 kernel
-  boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
-
   environment.systemPackages = with pkgs; [
   ];
 

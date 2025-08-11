@@ -7,7 +7,8 @@
   inputs,
   config,
   ...
-}: {
+}:
+{
   imports = [
     ../../modules/dev/python.nix
     ../../modules/dev/tailscale.nix
@@ -19,7 +20,7 @@
     autoconnect = true;
     authKey = config.sops.secrets.tskey-auth.path;
   };
-  sops.secrets.tskey-auth = {};
+  sops.secrets.tskey-auth = { };
 
   services.k3s.enable = true;
   services.k3s.role = "server";
@@ -49,15 +50,6 @@
     enable = true;
     libraries = pkgs.steam-run.args.multiPkgs pkgs;
   };
-
-  # virtualisation.virtualbox = {
-  #   guest.enable = true;
-  #   host = {
-  #     enable = true;
-  #     enableKvm = true;
-  #     addNetworkInterface = false;
-  #   };
-  # };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
