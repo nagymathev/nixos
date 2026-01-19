@@ -12,10 +12,10 @@
   xdg.portal.enable = true;
   xdg.portal.extraPortals = with pkgs; [
     xdg-desktop-portal-gtk
-    xdg-desktop-portal-kde
+    kdePackages.xdg-desktop-portal-kde
   ];
 
-  programs.hyprland.enable = false;
+  programs.hyprland.enable = true;
   programs.niri.enable = false;
 
   environment.systemPackages = with pkgs; [

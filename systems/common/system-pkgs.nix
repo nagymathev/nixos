@@ -21,6 +21,7 @@
     libreoffice
     vlc
     texliveFull
+    jetbrains.rider
 
     gdu
     kdePackages.filelight
@@ -54,5 +55,11 @@
     treefmt
     nixfmt-rfc-style
     lua5_4
+    dotnetCorePackages.dotnet_9.sdk
+
+    wayland
+    wayland-protocols
+    mesa
+    libxkbcommon
   ];
 }

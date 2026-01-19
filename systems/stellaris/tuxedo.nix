@@ -1,7 +1,13 @@
-{...}: {
+{ ... }:
+{
   hardware.tuxedo-rs.enable = true;
   hardware.tuxedo-rs.tailor-gui.enable = true;
   hardware.tuxedo-drivers.enable = true;
+  hardware.tuxedo-drivers.settings = {
+    fn-lock = false;
+    charging-profile = "stationary";
+    charging-priority = "performance";
+  };
 
   boot = {
     # Disable backlight with 0 brightness

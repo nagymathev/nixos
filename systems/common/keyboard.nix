@@ -3,16 +3,13 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   # Mouse and keyboard preferences
   services.libinput.mouse.accelProfile = "flat";
   services.libinput.mouse.accelSpeed = "0";
 
   services.libinput.touchpad.naturalScrolling = true;
-
-  environment.variables = {
-    XCURSOR_SIZE = lib.mkForce "32";
-  };
 
   # Configure keymap in X11
   services.xserver = {

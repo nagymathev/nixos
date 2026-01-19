@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   networking.hostName = "stellaris"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   # networking.extraHosts = ''
@@ -20,8 +21,8 @@
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [25565];
-  # networking.firewall.allowedUDPPorts = [25565];
+  networking.firewall.allowedTCPPorts = [ 8096 ];
+  networking.firewall.allowedUDPPorts = [ 8096 ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 

@@ -30,7 +30,6 @@
   environment.variables = {
     NVIM_PROFILE = "HOME"; # this is for the independent nvim configuration at nagymathev/nvim
     QT_QPA_PLATFORM = ''"wayland;xcb"'';
-    QT_STYLE_OVERRIDE = "adwaita";
     EDITOR = "nvim";
   };
 

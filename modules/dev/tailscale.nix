@@ -4,16 +4,18 @@
   lib,
   ...
 }:
-with lib; let
+with lib;
+let
   cfg = config.modules.tailscale;
-in {
+in
+{
   options.modules.tailscale = {
     enable = mkEnableOption "Tailscale";
     autoconnect = mkEnableOption "Autoconnect to tailscale services";
 
     authKey = mkOption {
       default = "";
-      type = types.string;
+      type = types.str;
       description = ''
         Tailscale authKey. Needs to be a path.
       '';
@@ -35,9 +37,15 @@ in {
       description = "Automatic connection to Tailscale";
 
       # make sure tailscale is running before trying to connect to tailscale
-      after = ["network-pre.target" "tailscale.service"];
-      wants = ["network-pre.target" "tailscale.service"];
-      wantedBy = ["multi-user.target"];
+      after = [
+        "network-pre.target"
+        "tailscale.service"
+      ];
+      wants = [
+        "network-pre.target"
+        "tailscale.service"
+      ];
+      wantedBy = [ "multi-user.target" ];
 
       # set this service as a oneshot job
       serviceConfig.Type = "oneshot";
